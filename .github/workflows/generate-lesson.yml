@@ -36,13 +36,7 @@ jobs:
       - name: Generate lesson
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          OPENAI_MODEL: ${{ secrets.OPENAI_MODEL }}
-          OPENAI_TTS_MODEL: ${{ secrets.OPENAI_TTS_MODEL }}
-          OPENAI_TTS_VOICE: ${{ secrets.OPENAI_TTS_VOICE }}
           ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
-          ELEVENLABS_VOICE_ID: ${{ secrets.ELEVENLABS_VOICE_ID }}
-          ELEVENLABS_MODEL_ID: ${{ secrets.ELEVENLABS_MODEL_ID }}
-          ELEVENLABS_OUTPUT_FORMAT: ${{ secrets.ELEVENLABS_OUTPUT_FORMAT }}
         run: |
           LEVEL="${{ github.event.inputs.level }}"
           if [ -z "$LEVEL" ]; then LEVEL="B1"; fi
