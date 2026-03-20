@@ -1,0 +1,65 @@
+name: Generate Weekly Lesson
+
+on:
+  workflow_dispatch:
+    inputs:
+      level:
+        description: CEFR level (A1-C2)
+        required: false
+        default: B1
+      tts_provider:
+        description: TTS provider (elevenlabs/openai)
+        required: false
+        default: elevenlabs
+  schedule:
+    - cron: "0 8 * * 1"
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Generate lesson
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ secrets.OPENAI_MODEL }}
+          OPENAI_TTS_MODEL: ${{ secrets.OPENAI_TTS_MODEL }}
+          OPENAI_TTS_VOICE: ${{ secrets.OPENAI_TTS_VOICE }}
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+          ELEVENLABS_VOICE_ID: ${{ secrets.ELEVENLABS_VOICE_ID }}
+          ELEVENLABS_MODEL_ID: ${{ secrets.ELEVENLABS_MODEL_ID }}
+          ELEVENLABS_OUTPUT_FORMAT: ${{ secrets.ELEVENLABS_OUTPUT_FORMAT }}
+        run: |
+          LEVEL="${{ github.event.inputs.level }}"
+          if [ -z "$LEVEL" ]; then LEVEL="B1"; fi
+
+          TTS_PROVIDER="${{ github.event.inputs.tts_provider }}"
+          if [ -z "$TTS_PROVIDER" ]; then TTS_PROVIDER="elevenlabs"; fi
+
+          python germanweekly.py --level "$LEVEL" --tts-provider "$TTS_PROVIDER"
+
+      - name: Commit and push lesson
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add lessons/latest.json lessons/latest.mp3 lessons/arvhive || true
+          if git diff --cached --quiet; then
+            echo "No lesson changes to commit"
+            exit 0
+          fi
+          git commit -m "chore: update weekly german lesson"
+          git push

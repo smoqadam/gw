@@ -1,0 +1,56 @@
+{
+  "title": "Ein neuer Job in Berlin",
+  "text": "Anna ist vor einem Monat nach Berlin gezogen. Sie hat einen neuen Job in einer großen Marketingagentur gefunden. Am ersten Tag war sie sehr nervös, aber ihre Kollegen waren freundlich und hilfsbereit. Sie haben Anna die Büros gezeigt und sie in die Projekte eingeführt. Die Agentur hat viele interessante Kunden, und Anna ist begeistert, mit ihnen zu arbeiten. Nach ein paar Wochen hat sie bereits ihre ersten Ideen präsentiert. Ihr Chef war beeindruckt und hat ihr mehr Verantwortung gegeben. In der Mittagspause geht Anna oft mit ihren Kollegen essen. Sie probieren verschiedene Restaurants aus und entdecken die Vielfalt der Berliner Küche. Am Freitagabend gehen sie manchmal zusammen aus, um das Wochenende zu feiern. Anna fühlt sich in Berlin wohl und freut sich auf ihre Zukunft in dieser aufregenden Stadt. Sie hat viele neue Freunde gefunden und lernt jeden Tag etwas Neues über die Kultur und die Menschen in Berlin.",
+  "date": "2026-03-20T11:18:39.254176+00:00",
+  "vocabs": [
+    {
+      "word": "nervös",
+      "definition": "nervous"
+    },
+    {
+      "word": "hilfsbereit",
+      "definition": "helpful"
+    },
+    {
+      "word": "interessant",
+      "definition": "interesting"
+    },
+    {
+      "word": "verantwortung",
+      "definition": "responsibility"
+    },
+    {
+      "word": "mittagspause",
+      "definition": "lunch break"
+    },
+    {
+      "word": "vielfalt",
+      "definition": "diversity"
+    },
+    {
+      "word": "ausgehen",
+      "definition": "to go out"
+    },
+    {
+      "word": "aufregend",
+      "definition": "exciting"
+    },
+    {
+      "word": "kultur",
+      "definition": "culture"
+    },
+    {
+      "word": "kollegen",
+      "definition": "colleagues"
+    },
+    {
+      "word": "ideen",
+      "definition": "ideas"
+    },
+    {
+      "word": "präsentieren",
+      "definition": "to present"
+    }
+  ],
+  "voice_path": "lessons/20260320-111839-ein-neuer-job-in-berlin.mp3"
+}
