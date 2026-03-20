@@ -14,7 +14,7 @@ from openai import OpenAI
 
 
 LESSONS_DIR = Path("lessons")
-ARCHIVE_DIR = LESSONS_DIR / "arvhive"
+ARCHIVE_DIR = LESSONS_DIR / "archive"
 LATEST_JSON_PATH = LESSONS_DIR / "latest.json"
 LATEST_AUDIO_PATH = LESSONS_DIR / "latest.mp3"
 RANDOM_CATEGORIES = [
@@ -178,18 +178,6 @@ def maybe_generate_voice(text: str, path: Path, tts_provider: str, voice_id: str
 
 def archive_existing_lessons(timestamp: str) -> None:
     ARCHIVE_DIR.mkdir(parents=True, exist_ok=True)
-    for legacy_path in LESSONS_DIR.glob("*"):
-        if not legacy_path.is_file():
-            continue
-        if legacy_path.name in {LATEST_JSON_PATH.name, LATEST_AUDIO_PATH.name}:
-            continue
-        if legacy_path.suffix.lower() not in {".json", ".mp3"}:
-            continue
-        target = ARCHIVE_DIR / legacy_path.name
-        if target.exists():
-            target = ARCHIVE_DIR / f"{timestamp}-{legacy_path.name}"
-        legacy_path.rename(target)
-
     for active_path in (LATEST_JSON_PATH, LATEST_AUDIO_PATH):
         if not active_path.exists():
             continue
