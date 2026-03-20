@@ -1,0 +1,61 @@
+{
+  "title": "Die Bedeutung von Technologie im Alltag",
+  "text": "Technologie spielt eine zentrale Rolle in unserem täglichen Leben. Sie erleichtert viele Aufgaben und verbessert die Kommunikation. Smartphones sind eines der wichtigsten Geräte. Mit ihnen können wir jederzeit und überall Informationen abrufen. Darüber hinaus nutzen wir das Internet, um zu lernen, zu arbeiten und uns zu vernetzen. Online-Plattformen bieten zahlreiche Möglichkeiten, beispielsweise für das Lernen von Sprachen oder das Teilen von Ideen. Auch in der Arbeitswelt ist Technologie unverzichtbar. Automatisierung und digitale Werkzeuge steigern die Effizienz und Produktivität. Viele Berufe haben sich durch technologische Entwicklungen verändert. Das bedeutet, dass wir uns ständig weiterbilden müssen, um mit den neuesten Trends Schritt zu halten. Ein weiterer wichtiger Aspekt ist die Datensicherheit. Mit der zunehmenden Digitalisierung müssen wir darauf achten, unsere persönlichen Daten zu schützen. Technologien wie Verschlüsselung helfen dabei, unsere Informationen sicher zu halten. Insgesamt ist Technologie ein wichtiger Bestandteil unserer Gesellschaft, der sowohl Vorteile als auch Herausforderungen mit sich bringt.",
+  "date": "2026-03-20T19:01:29.231299+00:00",
+  "category": "technology",
+  "vocabs": [
+    {
+      "word": "zentral",
+      "definition": "central"
+    },
+    {
+      "word": "erleichtern",
+      "definition": "to facilitate"
+    },
+    {
+      "word": "Gerät",
+      "definition": "device"
+    },
+    {
+      "word": "abrufen",
+      "definition": "to retrieve"
+    },
+    {
+      "word": "vernetzen",
+      "definition": "to connect"
+    },
+    {
+      "word": "Plattform",
+      "definition": "platform"
+    },
+    {
+      "word": "Automatisierung",
+      "definition": "automation"
+    },
+    {
+      "word": "Effizienz",
+      "definition": "efficiency"
+    },
+    {
+      "word": "Produktivität",
+      "definition": "productivity"
+    },
+    {
+      "word": "weiterbilden",
+      "definition": "to continue education"
+    },
+    {
+      "word": "Datensicherheit",
+      "definition": "data security"
+    },
+    {
+      "word": "Verschlüsselung",
+      "definition": "encryption"
+    },
+    {
+      "word": "Herausforderung",
+      "definition": "challenge"
+    }
+  ],
+  "voice_path": "lessons/latest.mp3"
+}

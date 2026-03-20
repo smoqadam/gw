@@ -1,60 +1,68 @@
 {
-  "title": "Die Bedeutung von Technologie im Alltag",
-  "text": "Technologie spielt eine zentrale Rolle in unserem täglichen Leben. Sie erleichtert viele Aufgaben und verbessert die Kommunikation. Smartphones sind eines der wichtigsten Geräte. Mit ihnen können wir jederzeit und überall Informationen abrufen. Darüber hinaus nutzen wir das Internet, um zu lernen, zu arbeiten und uns zu vernetzen. Online-Plattformen bieten zahlreiche Möglichkeiten, beispielsweise für das Lernen von Sprachen oder das Teilen von Ideen. Auch in der Arbeitswelt ist Technologie unverzichtbar. Automatisierung und digitale Werkzeuge steigern die Effizienz und Produktivität. Viele Berufe haben sich durch technologische Entwicklungen verändert. Das bedeutet, dass wir uns ständig weiterbilden müssen, um mit den neuesten Trends Schritt zu halten. Ein weiterer wichtiger Aspekt ist die Datensicherheit. Mit der zunehmenden Digitalisierung müssen wir darauf achten, unsere persönlichen Daten zu schützen. Technologien wie Verschlüsselung helfen dabei, unsere Informationen sicher zu halten. Insgesamt ist Technologie ein wichtiger Bestandteil unserer Gesellschaft, der sowohl Vorteile als auch Herausforderungen mit sich bringt.",
-  "date": "2026-03-20T19:01:29.231299+00:00",
-  "category": "technology",
+  "title": "Die Weimarer Republik: Ein wichtiger Abschnitt der deutschen Geschichte",
+  "text": "Die Weimarer Republik existierte von 1919 bis 1933 und war die erste demokratische Staatsform in Deutschland nach dem Ersten Weltkrieg. Diese Zeit war geprägt von politischen, sozialen und wirtschaftlichen Herausforderungen. Nach dem Krieg wurde der Vertrag von Versailles unterzeichnet, der Deutschland viele Gebietsverluste und Reparationszahlungen auferlegte. Diese Bedingungen führten zu einer schweren Wirtschaftskrise und hoher Arbeitslosigkeit in den 1920er Jahren. Trotz dieser Schwierigkeiten war die Weimarer Republik auch eine Zeit der kulturellen Blüte. Künstler, Schriftsteller und Wissenschaftler trugen zur Entwicklung der deutschen Kultur bei. In dieser Zeit entstanden bedeutende Werke der Literatur und Kunst. Politisch war die Republik jedoch instabil, mit vielen Parteien und häufigen Regierungswechseln. 1933 übernahm Adolf Hitler die Macht, was das Ende der Weimarer Republik bedeutete. Die Lehren aus dieser Zeit sind bis heute wichtig, um die Bedeutung von Demokratie und die Gefahren des Extremismus zu verstehen.",
+  "date": "2026-03-20T19:04:55.896742+00:00",
+  "category": "history",
   "vocabs": [
     {
-      "word": "zentral",
-      "definition": "central"
+      "word": "Weimarer Republik",
+      "definition": "Weimar Republic, the first democratic state in Germany"
     },
     {
-      "word": "erleichtern",
-      "definition": "to facilitate"
-    },
-    {
-      "word": "Gerät",
-      "definition": "device"
-    },
-    {
-      "word": "abrufen",
-      "definition": "to retrieve"
-    },
-    {
-      "word": "vernetzen",
-      "definition": "to connect"
-    },
-    {
-      "word": "Plattform",
-      "definition": "platform"
-    },
-    {
-      "word": "Automatisierung",
-      "definition": "automation"
-    },
-    {
-      "word": "Effizienz",
-      "definition": "efficiency"
-    },
-    {
-      "word": "Produktivität",
-      "definition": "productivity"
-    },
-    {
-      "word": "weiterbilden",
-      "definition": "to continue education"
-    },
-    {
-      "word": "Datensicherheit",
-      "definition": "data security"
-    },
-    {
-      "word": "Verschlüsselung",
-      "definition": "encryption"
+      "word": "demokratisch",
+      "definition": "democratic, relating to a system of government by the whole population"
     },
     {
       "word": "Herausforderung",
-      "definition": "challenge"
+      "definition": "challenge, a difficult task or situation"
+    },
+    {
+      "word": "Vertrag",
+      "definition": "treaty, a formal agreement between countries"
+    },
+    {
+      "word": "Reparation",
+      "definition": "reparation, compensation for war damages"
+    },
+    {
+      "word": "Wirtschaftskrise",
+      "definition": "economic crisis, a period of financial downturn"
+    },
+    {
+      "word": "Arbeitslosigkeit",
+      "definition": "unemployment, the state of being without a job"
+    },
+    {
+      "word": "kulturelle Blüte",
+      "definition": "cultural flourishing, a period of great cultural activity"
+    },
+    {
+      "word": "Künstler",
+      "definition": "artist, a person who creates art"
+    },
+    {
+      "word": "Literatur",
+      "definition": "literature, written works, especially those considered of superior or lasting artistic merit"
+    },
+    {
+      "word": "politisch",
+      "definition": "political, relating to the government or public affairs"
+    },
+    {
+      "word": "instabil",
+      "definition": "unstable, not firm or steady"
+    },
+    {
+      "word": "Extremismus",
+      "definition": "extremism, the holding of extreme political or religious views"
+    },
+    {
+      "word": "Lehre",
+      "definition": "lesson, a piece of advice or knowledge gained from experience"
+    },
+    {
+      "word": "bedeutsam",
+      "definition": "significant, important or meaningful"
     }
   ],
   "voice_path": "lessons/latest.mp3"
