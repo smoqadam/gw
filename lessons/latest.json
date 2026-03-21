@@ -1,68 +1,60 @@
 {
-  "title": "Die Weimarer Republik: Ein wichtiger Abschnitt der deutschen Geschichte",
-  "text": "Die Weimarer Republik existierte von 1919 bis 1933 und war die erste demokratische Staatsform in Deutschland nach dem Ersten Weltkrieg. Diese Zeit war geprägt von politischen, sozialen und wirtschaftlichen Herausforderungen. Nach dem Krieg wurde der Vertrag von Versailles unterzeichnet, der Deutschland viele Gebietsverluste und Reparationszahlungen auferlegte. Diese Bedingungen führten zu einer schweren Wirtschaftskrise und hoher Arbeitslosigkeit in den 1920er Jahren. Trotz dieser Schwierigkeiten war die Weimarer Republik auch eine Zeit der kulturellen Blüte. Künstler, Schriftsteller und Wissenschaftler trugen zur Entwicklung der deutschen Kultur bei. In dieser Zeit entstanden bedeutende Werke der Literatur und Kunst. Politisch war die Republik jedoch instabil, mit vielen Parteien und häufigen Regierungswechseln. 1933 übernahm Adolf Hitler die Macht, was das Ende der Weimarer Republik bedeutete. Die Lehren aus dieser Zeit sind bis heute wichtig, um die Bedeutung von Demokratie und die Gefahren des Extremismus zu verstehen.",
-  "date": "2026-03-20T19:04:55.896742+00:00",
+  "title": "Die Weimarer Republik",
+  "text": "Die Weimarer Republik war die erste demokratische Regierung in Deutschland nach dem Ersten Weltkrieg. Sie wurde 1919 gegründet und dauerte bis 1933. Die Republik erhielt ihren Namen von der Stadt Weimar, wo die Verfassung ausgearbeitet wurde. Die Weimarer Republik war eine Zeit großer politischer und wirtschaftlicher Schwierigkeiten. Die Hyperinflation von 1923 führte dazu, dass die Menschen ihre Ersparnisse verloren. Trotz dieser Probleme gab es auch kulturelle Blüten. Die 1920er Jahre waren bekannt für Fortschritte in Kunst, Literatur und Wissenschaft. Berühmte Persönlichkeiten wie der Schriftsteller Thomas Mann und der Regisseur Fritz Lang prägten diese Zeit. Politisch war die Weimarer Republik von Instabilität geprägt. Verschiedene Parteien kämpften um die Macht, und es gab oft Regierungswechsel. 1933 endete die Weimarer Republik mit der Machtergreifung der Nationalsozialisten unter Adolf Hitler. Diese Zeit ist wichtig, um die Entwicklung der deutschen Demokratie zu verstehen und die Gefahren extremistischen Denkens zu erkennen.",
+  "date": "2026-03-21T06:28:11.702159+00:00",
   "category": "history",
   "vocabs": [
     {
       "word": "Weimarer Republik",
-      "definition": "Weimar Republic, the first democratic state in Germany"
+      "definition": "Weimar Republic, the first democratic government in Germany."
     },
     {
-      "word": "demokratisch",
-      "definition": "democratic, relating to a system of government by the whole population"
+      "word": "Hyperinflation",
+      "definition": "Hyperinflation, extreme rapid inflation that devalues currency."
     },
     {
-      "word": "Herausforderung",
-      "definition": "challenge, a difficult task or situation"
+      "word": "Verfassung",
+      "definition": "Constitution, a set of fundamental principles governing a state."
     },
     {
-      "word": "Vertrag",
-      "definition": "treaty, a formal agreement between countries"
+      "word": "kulturelle Blüten",
+      "definition": "Cultural bloom, a period of significant artistic and cultural development."
     },
     {
-      "word": "Reparation",
-      "definition": "reparation, compensation for war damages"
+      "word": "Stabilität",
+      "definition": "Stability, the state of being stable or steady."
     },
     {
-      "word": "Wirtschaftskrise",
-      "definition": "economic crisis, a period of financial downturn"
+      "word": "Instabilität",
+      "definition": "Instability, lack of stability; a state of unpredictability."
     },
     {
-      "word": "Arbeitslosigkeit",
-      "definition": "unemployment, the state of being without a job"
+      "word": "Machtergreifung",
+      "definition": "Seizure of power, the act of gaining control over a government."
     },
     {
-      "word": "kulturelle Blüte",
-      "definition": "cultural flourishing, a period of great cultural activity"
+      "word": "extremistisches Denken",
+      "definition": "Extremist thinking, belief in radical ideologies."
     },
     {
-      "word": "Künstler",
-      "definition": "artist, a person who creates art"
+      "word": "Ersparnisse",
+      "definition": "Savings, money that has been saved over time."
     },
     {
-      "word": "Literatur",
-      "definition": "literature, written works, especially those considered of superior or lasting artistic merit"
+      "word": "Regierungswechsel",
+      "definition": "Change of government, a shift in political leadership."
     },
     {
-      "word": "politisch",
-      "definition": "political, relating to the government or public affairs"
+      "word": "Persönlichkeiten",
+      "definition": "Personalities, notable individuals with significant influence."
     },
     {
-      "word": "instabil",
-      "definition": "unstable, not firm or steady"
+      "word": "literarisch",
+      "definition": "Literary, related to literature or authorship."
     },
     {
-      "word": "Extremismus",
-      "definition": "extremism, the holding of extreme political or religious views"
-    },
-    {
-      "word": "Lehre",
-      "definition": "lesson, a piece of advice or knowledge gained from experience"
-    },
-    {
-      "word": "bedeutsam",
-      "definition": "significant, important or meaningful"
+      "word": "wissenschaftlich",
+      "definition": "Scientific, pertaining to science or its methodologies."
     }
   ],
   "voice_path": "lessons/latest.mp3"
