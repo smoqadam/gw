@@ -39,7 +39,6 @@ python germanweekly.py --level B1
 
 Optional flags:
 
-- `--tts-provider openai`
 - `--voice-id <voice_id>`
 - `--dry-run`
 
@@ -70,5 +69,6 @@ Then run:
 ## Notes
 
 - Category is chosen randomly each run.
+- TTS tries ElevenLabs first; if it fails, it automatically falls back to OpenAI TTS.
 - ElevenLabs voice is chosen randomly unless `--voice-id` is passed.
 - OpenAI and ElevenLabs use their official Python SDKs.

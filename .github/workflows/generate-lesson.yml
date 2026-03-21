@@ -7,10 +7,6 @@ on:
         description: CEFR level (A1-C2)
         required: false
         default: B1
-      tts_provider:
-        description: TTS provider (elevenlabs/openai)
-        required: false
-        default: elevenlabs
   schedule:
     - cron: "0 8 * * 1"
 
@@ -40,11 +36,7 @@ jobs:
         run: |
           LEVEL="${{ github.event.inputs.level }}"
           if [ -z "$LEVEL" ]; then LEVEL="B1"; fi
-
-          TTS_PROVIDER="${{ github.event.inputs.tts_provider }}"
-          if [ -z "$TTS_PROVIDER" ]; then TTS_PROVIDER="elevenlabs"; fi
-
-          python germanweekly.py --level "$LEVEL" --tts-provider "$TTS_PROVIDER"
+          python germanweekly.py --level "$LEVEL"
 
       - name: Commit and push lesson
         run: |

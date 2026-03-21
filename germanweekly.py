@@ -41,12 +41,6 @@ def parse_args() -> argparse.Namespace:
         help="Language level like A2, B1, B2, C1",
     )
     parser.add_argument(
-        "--tts-provider",
-        choices=["elevenlabs", "openai"],
-        default="elevenlabs",
-        help="TTS engine provider",
-    )
-    parser.add_argument(
         "--voice-id",
         default=None,
         help="Optional TTS voice id. Uses provider-specific env default if omitted.",
@@ -165,14 +159,18 @@ def synthesize_with_openai(text: str, output_path: Path, voice_id: str | None) -
     audio.write_to_file(str(output_path))
 
 
-def maybe_generate_voice(text: str, path: Path, tts_provider: str, voice_id: str | None, dry_run: bool) -> str:
+def maybe_generate_voice(text: str, path: Path, voice_id: str | None, dry_run: bool) -> str:
     if dry_run:
         return ""
 
-    if tts_provider == "elevenlabs":
+    try:
         synthesize_with_elevenlabs(text=text, output_path=path, voice_id=voice_id)
-    else:
+        print("TTS provider: elevenlabs")
+    except Exception as exc:
+        print(f"ElevenLabs failed, falling back to OpenAI TTS: {exc}")
         synthesize_with_openai(text=text, output_path=path, voice_id=voice_id)
+        print("TTS provider: openai")
+
     return str(path)
 
 
@@ -215,7 +213,6 @@ def main() -> None:
     saved_voice_path = maybe_generate_voice(
         text=lesson["text"],
         path=voice_path,
-        tts_provider=args.tts_provider,
         voice_id=args.voice_id,
         dry_run=args.dry_run,
     )
