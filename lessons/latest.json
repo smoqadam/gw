@@ -1,68 +1,68 @@
 {
-  "title": "Deutsche Kultur: Feste und Traditionen",
-  "text": "Deutschland ist bekannt für seine vielfältigen Feste und Traditionen, die oft tief in der Geschichte verwurzelt sind. Eines der bekanntesten Feste ist das Oktoberfest in München, das jährlich Millionen von Besuchern anzieht. Hier feiern die Menschen mit Bier, traditionellen Speisen und bayerischer Musik. Ein weiteres wichtiges Fest ist Weihnachten, das in Deutschland sehr festlich gefeiert wird. Viele Städte haben Weihnachtsmärkte, wo man Geschenke kaufen und typische Leckereien wie Lebkuchen und Glühwein genießen kann. \n\nEin weiteres Beispiel für eine deutsche Tradition ist der Karneval, der vor der Fastenzeit gefeiert wird. Besonders in Städten wie Köln und Düsseldorf gibt es farbenfrohe Umzüge und viele Menschen verkleiden sich. Diese Feste zeigen die Vielfalt der deutschen Kultur und bringen die Menschen zusammen. In Deutschland ist es üblich, diese Traditionen zu pflegen und an ihnen teilzunehmen, um die Gemeinschaft zu stärken. Das Verständnis und die Wertschätzung dieser Feste sind wichtig für alle, die die deutsche Sprache und Kultur lernen möchten.",
-  "date": "2026-03-21T10:48:27.269959+00:00",
-  "category": "culture",
+  "title": "Das Leben von Ludwig van Beethoven",
+  "text": "Ludwig van Beethoven wurde am 17. Dezember 1770 in Bonn geboren. Er war ein bedeutender deutscher Komponist und Pianist, der als einer der größten Musiker der Geschichte gilt. Beethoven zeigte schon in jungen Jahren großes Talent für die Musik. Mit nur sieben Jahren gab er sein erstes Konzert. Er studierte Musik bei verschiedenen Lehrern, darunter auch Christian Gottlob Neefe. 1792 zog er nach Wien, wo er viele berühmte Kompositionen schuf. Trotz seiner zunehmenden Taubheit konnte er weiterhin musizieren und komponieren. Zu seinen bekanntesten Werken gehören die 'Symphonie Nr. 5' und die 'Mondscheinsonate'. Beethoven war ein Pionier der Übergangszeit zwischen Klassik und Romantik. Sein Einfluss auf die Musik ist bis heute spürbar. Am 26. März 1827 starb Beethoven in Wien. Sein Erbe lebt in der klassischen Musik weiter. Viele seiner Werke werden heute noch häufig aufgeführt und geschätzt. Beethoven zeigt, dass kreative Leidenschaft und Durchhaltevermögen auch in schwierigen Zeiten zu Erfolg führen können.",
+  "date": "2026-03-23T08:17:12.636363+00:00",
+  "category": "biography",
   "vocabs": [
     {
-      "word": "vielfältig",
-      "definition": "diverse or varied"
+      "word": "Komponist",
+      "definition": "composer"
     },
     {
-      "word": "verankert",
-      "definition": "anchored or rooted"
+      "word": "Pianist",
+      "definition": "pianist"
     },
     {
-      "word": "anziehen",
-      "definition": "to attract"
+      "word": "Talent",
+      "definition": "talent"
     },
     {
-      "word": "festlich",
-      "definition": "festive"
+      "word": "Konzert",
+      "definition": "concert"
     },
     {
-      "word": "Leckereien",
-      "definition": "treats or delicacies"
+      "word": "studieren",
+      "definition": "to study"
     },
     {
-      "word": "Karneval",
-      "definition": "carnival"
+      "word": "Komposition",
+      "definition": "composition"
     },
     {
-      "word": "farbenfroh",
-      "definition": "colorful"
+      "word": "taub",
+      "definition": "deaf"
     },
     {
-      "word": "verkleiden",
-      "definition": "to dress up"
+      "word": "beeinflussen",
+      "definition": "to influence"
     },
     {
-      "word": "Gemeinschaft",
-      "definition": "community"
+      "word": "Pionier",
+      "definition": "pioneer"
     },
     {
-      "word": "pflegen",
-      "definition": "to maintain or cultivate"
+      "word": "Übergangszeit",
+      "definition": "transitional period"
     },
     {
-      "word": "Wertschätzung",
-      "definition": "appreciation"
+      "word": "Erbe",
+      "definition": "legacy"
     },
     {
-      "word": "Teilnehmen",
-      "definition": "to participate"
+      "word": "kreativ",
+      "definition": "creative"
     },
     {
-      "word": "Traditionen",
-      "definition": "traditions"
+      "word": "Leidenschaft",
+      "definition": "passion"
     },
     {
-      "word": "Umzüge",
-      "definition": "parades"
+      "word": "Durchhaltevermögen",
+      "definition": "perseverance"
     },
     {
-      "word": "Bier",
-      "definition": "beer"
+      "word": "schätzen",
+      "definition": "to appreciate"
     }
   ],
   "voice_path": "lessons/latest.mp3"
