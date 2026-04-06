@@ -1,0 +1,69 @@
+{
+  "title": "Die Entwicklung der Smart-Technologie",
+  "text": "In den letzten Jahren hat sich die Smart-Technologie rasant entwickelt. Smart-Geräte, wie Smartphones, Smart-TVs und intelligente Haushaltsgeräte, sind aus unserem Alltag nicht mehr wegzudenken. Diese Technologien bieten zahlreiche Vorteile, aber auch einige Herausforderungen. Ein großer Vorteil ist die Vernetzung: Geräte können miteinander kommunizieren und Informationen austauschen. Das erleichtert viele Aufgaben, zum Beispiel das Steuern von Lichtern oder Thermostaten über das Smartphone. Allerdings gibt es auch Bedenken hinsichtlich der Datensicherheit. Viele Menschen sorgen sich um den Schutz ihrer persönlichen Informationen. Zudem kann die Abhängigkeit von Technologie zu Problemen führen, wenn Geräte ausfallen oder nicht richtig funktionieren. Ein weiteres wichtiges Thema ist die Energieeffizienz. Smart-Technologien können helfen, den Energieverbrauch zu reduzieren, was sowohl der Umwelt als auch dem Geldbeutel zugutekommt. Insgesamt ist die Entwicklung der Smart-Technologie spannend und vielversprechend, erfordert aber auch eine kritische Auseinandersetzung mit den Fragen der Sicherheit und des nachhaltigen Konsums.",
+  "date": "2026-03-30T08:29:43.461679+00:00",
+  "category": "technology",
+  "vocabs": [
+    {
+      "word": "Vernetzung",
+      "definition": "Networking"
+    },
+    {
+      "word": "Geräte",
+      "definition": "Devices"
+    },
+    {
+      "word": "kommunizieren",
+      "definition": "to communicate"
+    },
+    {
+      "word": "Informationen",
+      "definition": "Information"
+    },
+    {
+      "word": "steuern",
+      "definition": "to control"
+    },
+    {
+      "word": "Bedenken",
+      "definition": "Concerns"
+    },
+    {
+      "word": "Datensicherheit",
+      "definition": "Data security"
+    },
+    {
+      "word": "Abhängigkeit",
+      "definition": "Dependency"
+    },
+    {
+      "word": "Energieeffizienz",
+      "definition": "Energy efficiency"
+    },
+    {
+      "word": "reduzieren",
+      "definition": "to reduce"
+    },
+    {
+      "word": "Umwelt",
+      "definition": "Environment"
+    },
+    {
+      "word": "nachhaltig",
+      "definition": "sustainable"
+    },
+    {
+      "word": "Konsum",
+      "definition": "Consumption"
+    },
+    {
+      "word": "spannend",
+      "definition": "exciting"
+    },
+    {
+      "word": "kritische Auseinandersetzung",
+      "definition": "critical engagement"
+    }
+  ],
+  "voice_path": "lessons/latest.mp3"
+}

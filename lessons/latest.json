@@ -1,68 +1,64 @@
 {
-  "title": "Die Entwicklung der Smart-Technologie",
-  "text": "In den letzten Jahren hat sich die Smart-Technologie rasant entwickelt. Smart-Geräte, wie Smartphones, Smart-TVs und intelligente Haushaltsgeräte, sind aus unserem Alltag nicht mehr wegzudenken. Diese Technologien bieten zahlreiche Vorteile, aber auch einige Herausforderungen. Ein großer Vorteil ist die Vernetzung: Geräte können miteinander kommunizieren und Informationen austauschen. Das erleichtert viele Aufgaben, zum Beispiel das Steuern von Lichtern oder Thermostaten über das Smartphone. Allerdings gibt es auch Bedenken hinsichtlich der Datensicherheit. Viele Menschen sorgen sich um den Schutz ihrer persönlichen Informationen. Zudem kann die Abhängigkeit von Technologie zu Problemen führen, wenn Geräte ausfallen oder nicht richtig funktionieren. Ein weiteres wichtiges Thema ist die Energieeffizienz. Smart-Technologien können helfen, den Energieverbrauch zu reduzieren, was sowohl der Umwelt als auch dem Geldbeutel zugutekommt. Insgesamt ist die Entwicklung der Smart-Technologie spannend und vielversprechend, erfordert aber auch eine kritische Auseinandersetzung mit den Fragen der Sicherheit und des nachhaltigen Konsums.",
-  "date": "2026-03-30T08:29:43.461679+00:00",
-  "category": "technology",
+  "title": "Die Bedeutung von Recycling",
+  "text": "Recycling ist ein wichtiger Prozess, um Abfall zu reduzieren und die Umwelt zu schützen. Es bedeutet, dass Materialien wie Papier, Glas und Plastik wiederverwendet werden, anstatt sie wegzuwerfen. Durch Recycling können wir natürliche Ressourcen sparen und die Menge an Müll, die auf Deponien landet, verringern. In Deutschland gibt es strenge Gesetze, die Recycling fördern. Zum Beispiel müssen alle Haushalte ihre Abfälle trennen. Es gibt spezielle Behälter für Papier, Plastik und Biomüll. Diese Trennung hilft, die Wiederverwertbarkeit der Materialien zu erhöhen. Außerdem gibt es viele Unternehmen, die recycelte Produkte herstellen, wie zum Beispiel Taschen oder Möbel aus alten Materialien. Recycling ist nicht nur gut für die Umwelt, sondern auch wirtschaftlich sinnvoll. Es schafft Arbeitsplätze in der Recyclingbranche und reduziert die Kosten für die Abfallentsorgung. Jeder kann seinen Teil dazu beitragen, indem er Abfälle richtig trennt und recyclebare Produkte kauft. Indem wir Recycling unterstützen, schützen wir unseren Planeten für zukünftige Generationen.",
+  "date": "2026-04-06T08:29:42.517864+00:00",
+  "category": "science",
   "vocabs": [
     {
-      "word": "Vernetzung",
-      "definition": "Networking"
+      "word": "Recycling",
+      "definition": "The process of reusing materials."
     },
     {
-      "word": "Geräte",
-      "definition": "Devices"
-    },
-    {
-      "word": "kommunizieren",
-      "definition": "to communicate"
-    },
-    {
-      "word": "Informationen",
-      "definition": "Information"
-    },
-    {
-      "word": "steuern",
-      "definition": "to control"
-    },
-    {
-      "word": "Bedenken",
-      "definition": "Concerns"
-    },
-    {
-      "word": "Datensicherheit",
-      "definition": "Data security"
-    },
-    {
-      "word": "Abhängigkeit",
-      "definition": "Dependency"
-    },
-    {
-      "word": "Energieeffizienz",
-      "definition": "Energy efficiency"
-    },
-    {
-      "word": "reduzieren",
-      "definition": "to reduce"
+      "word": "Abfall",
+      "definition": "Waste or garbage."
     },
     {
       "word": "Umwelt",
-      "definition": "Environment"
+      "definition": "Environment."
     },
     {
-      "word": "nachhaltig",
-      "definition": "sustainable"
+      "word": "Wiederverwendung",
+      "definition": "Reuse of materials."
     },
     {
-      "word": "Konsum",
-      "definition": "Consumption"
+      "word": "Ressourcen",
+      "definition": "Natural resources."
     },
     {
-      "word": "spannend",
-      "definition": "exciting"
+      "word": "Deponien",
+      "definition": "Landfills."
     },
     {
-      "word": "kritische Auseinandersetzung",
-      "definition": "critical engagement"
+      "word": "Gesetze",
+      "definition": "Laws or regulations."
+    },
+    {
+      "word": "Behälter",
+      "definition": "Containers for waste."
+    },
+    {
+      "word": "Trennung",
+      "definition": "Separation of waste."
+    },
+    {
+      "word": "wirtschaftlich",
+      "definition": "Economically."
+    },
+    {
+      "word": "Arbeitsplätze",
+      "definition": "Jobs or employment opportunities."
+    },
+    {
+      "word": "Abfallentsorgung",
+      "definition": "Waste disposal."
+    },
+    {
+      "word": "unterstützen",
+      "definition": "To support or assist."
+    },
+    {
+      "word": "Generationen",
+      "definition": "Generations or age groups."
     }
   ],
   "voice_path": "lessons/latest.mp3"
