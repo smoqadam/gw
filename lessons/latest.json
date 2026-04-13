@@ -1,64 +1,68 @@
 {
-  "title": "Die Bedeutung von Recycling",
-  "text": "Recycling ist ein wichtiger Prozess, um Abfall zu reduzieren und die Umwelt zu schützen. Es bedeutet, dass Materialien wie Papier, Glas und Plastik wiederverwendet werden, anstatt sie wegzuwerfen. Durch Recycling können wir natürliche Ressourcen sparen und die Menge an Müll, die auf Deponien landet, verringern. In Deutschland gibt es strenge Gesetze, die Recycling fördern. Zum Beispiel müssen alle Haushalte ihre Abfälle trennen. Es gibt spezielle Behälter für Papier, Plastik und Biomüll. Diese Trennung hilft, die Wiederverwertbarkeit der Materialien zu erhöhen. Außerdem gibt es viele Unternehmen, die recycelte Produkte herstellen, wie zum Beispiel Taschen oder Möbel aus alten Materialien. Recycling ist nicht nur gut für die Umwelt, sondern auch wirtschaftlich sinnvoll. Es schafft Arbeitsplätze in der Recyclingbranche und reduziert die Kosten für die Abfallentsorgung. Jeder kann seinen Teil dazu beitragen, indem er Abfälle richtig trennt und recyclebare Produkte kauft. Indem wir Recycling unterstützen, schützen wir unseren Planeten für zukünftige Generationen.",
-  "date": "2026-04-06T08:29:42.517864+00:00",
-  "category": "science",
+  "title": "Die Auswirkungen der Technologie auf unser Leben",
+  "text": "Die Technologie hat einen großen Einfluss auf unser tägliches Leben. Heutzutage nutzen die meisten Menschen Smartphones, Tablets und Computer, um Informationen zu finden und zu kommunizieren. Die sozialen Medien ermöglichen es uns, mit Freunden und Familie in Kontakt zu bleiben, egal wo sie sich befinden. Allerdings hat die ständige Nutzung von Technologie auch negative Auswirkungen. Zum Beispiel verbringen viele Menschen zu viel Zeit vor Bildschirmen, was zu gesundheitlichen Problemen führen kann. Außerdem kann die Abhängigkeit von Technologie dazu führen, dass persönliche Gespräche seltener werden. In der Arbeitswelt hat die Technologie viele Veränderungen gebracht. Automatisierung und künstliche Intelligenz verändern, wie wir arbeiten. Viele Jobs erfordern now digitale Fähigkeiten, die in der Schule nicht immer gelehrt werden. Daher ist es wichtig, sich kontinuierlich weiterzubilden und neue Fähigkeiten zu erlernen. Insgesamt ist Technologie ein wertvolles Werkzeug, das sowohl Chancen als auch Herausforderungen bietet. Es liegt an uns, die Vorteile zu nutzen und die Nachteile zu minimieren.",
+  "date": "2026-04-13T08:39:39.824972+00:00",
+  "category": "technology",
   "vocabs": [
     {
-      "word": "Recycling",
-      "definition": "The process of reusing materials."
+      "word": "Einfluss",
+      "definition": "influence"
     },
     {
-      "word": "Abfall",
-      "definition": "Waste or garbage."
+      "word": "täglich",
+      "definition": "daily"
     },
     {
-      "word": "Umwelt",
-      "definition": "Environment."
+      "word": "Kommunikation",
+      "definition": "communication"
     },
     {
-      "word": "Wiederverwendung",
-      "definition": "Reuse of materials."
+      "word": "soziale Medien",
+      "definition": "social media"
     },
     {
-      "word": "Ressourcen",
-      "definition": "Natural resources."
+      "word": "gesundheitlich",
+      "definition": "health-related"
     },
     {
-      "word": "Deponien",
-      "definition": "Landfills."
+      "word": "Abhängigkeit",
+      "definition": "dependence"
     },
     {
-      "word": "Gesetze",
-      "definition": "Laws or regulations."
+      "word": "Automatisierung",
+      "definition": "automation"
     },
     {
-      "word": "Behälter",
-      "definition": "Containers for waste."
+      "word": "künstliche Intelligenz",
+      "definition": "artificial intelligence"
     },
     {
-      "word": "Trennung",
-      "definition": "Separation of waste."
+      "word": "verändern",
+      "definition": "to change"
     },
     {
-      "word": "wirtschaftlich",
-      "definition": "Economically."
+      "word": "digitale Fähigkeiten",
+      "definition": "digital skills"
     },
     {
-      "word": "Arbeitsplätze",
-      "definition": "Jobs or employment opportunities."
+      "word": "weiterbilden",
+      "definition": "to continue education"
     },
     {
-      "word": "Abfallentsorgung",
-      "definition": "Waste disposal."
+      "word": "Herausforderungen",
+      "definition": "challenges"
     },
     {
-      "word": "unterstützen",
-      "definition": "To support or assist."
+      "word": "Werkzeug",
+      "definition": "tool"
     },
     {
-      "word": "Generationen",
-      "definition": "Generations or age groups."
+      "word": "minimieren",
+      "definition": "to minimize"
+    },
+    {
+      "word": "Chancen",
+      "definition": "opportunities"
     }
   ],
   "voice_path": "lessons/latest.mp3"
