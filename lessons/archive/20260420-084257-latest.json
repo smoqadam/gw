@@ -1,0 +1,69 @@
+{
+  "title": "Die Auswirkungen der Technologie auf unser Leben",
+  "text": "Die Technologie hat einen großen Einfluss auf unser tägliches Leben. Heutzutage nutzen die meisten Menschen Smartphones, Tablets und Computer, um Informationen zu finden und zu kommunizieren. Die sozialen Medien ermöglichen es uns, mit Freunden und Familie in Kontakt zu bleiben, egal wo sie sich befinden. Allerdings hat die ständige Nutzung von Technologie auch negative Auswirkungen. Zum Beispiel verbringen viele Menschen zu viel Zeit vor Bildschirmen, was zu gesundheitlichen Problemen führen kann. Außerdem kann die Abhängigkeit von Technologie dazu führen, dass persönliche Gespräche seltener werden. In der Arbeitswelt hat die Technologie viele Veränderungen gebracht. Automatisierung und künstliche Intelligenz verändern, wie wir arbeiten. Viele Jobs erfordern now digitale Fähigkeiten, die in der Schule nicht immer gelehrt werden. Daher ist es wichtig, sich kontinuierlich weiterzubilden und neue Fähigkeiten zu erlernen. Insgesamt ist Technologie ein wertvolles Werkzeug, das sowohl Chancen als auch Herausforderungen bietet. Es liegt an uns, die Vorteile zu nutzen und die Nachteile zu minimieren.",
+  "date": "2026-04-13T08:39:39.824972+00:00",
+  "category": "technology",
+  "vocabs": [
+    {
+      "word": "Einfluss",
+      "definition": "influence"
+    },
+    {
+      "word": "täglich",
+      "definition": "daily"
+    },
+    {
+      "word": "Kommunikation",
+      "definition": "communication"
+    },
+    {
+      "word": "soziale Medien",
+      "definition": "social media"
+    },
+    {
+      "word": "gesundheitlich",
+      "definition": "health-related"
+    },
+    {
+      "word": "Abhängigkeit",
+      "definition": "dependence"
+    },
+    {
+      "word": "Automatisierung",
+      "definition": "automation"
+    },
+    {
+      "word": "künstliche Intelligenz",
+      "definition": "artificial intelligence"
+    },
+    {
+      "word": "verändern",
+      "definition": "to change"
+    },
+    {
+      "word": "digitale Fähigkeiten",
+      "definition": "digital skills"
+    },
+    {
+      "word": "weiterbilden",
+      "definition": "to continue education"
+    },
+    {
+      "word": "Herausforderungen",
+      "definition": "challenges"
+    },
+    {
+      "word": "Werkzeug",
+      "definition": "tool"
+    },
+    {
+      "word": "minimieren",
+      "definition": "to minimize"
+    },
+    {
+      "word": "Chancen",
+      "definition": "opportunities"
+    }
+  ],
+  "voice_path": "lessons/latest.mp3"
+}

@@ -1,68 +1,68 @@
 {
-  "title": "Die Auswirkungen der Technologie auf unser Leben",
-  "text": "Die Technologie hat einen großen Einfluss auf unser tägliches Leben. Heutzutage nutzen die meisten Menschen Smartphones, Tablets und Computer, um Informationen zu finden und zu kommunizieren. Die sozialen Medien ermöglichen es uns, mit Freunden und Familie in Kontakt zu bleiben, egal wo sie sich befinden. Allerdings hat die ständige Nutzung von Technologie auch negative Auswirkungen. Zum Beispiel verbringen viele Menschen zu viel Zeit vor Bildschirmen, was zu gesundheitlichen Problemen führen kann. Außerdem kann die Abhängigkeit von Technologie dazu führen, dass persönliche Gespräche seltener werden. In der Arbeitswelt hat die Technologie viele Veränderungen gebracht. Automatisierung und künstliche Intelligenz verändern, wie wir arbeiten. Viele Jobs erfordern now digitale Fähigkeiten, die in der Schule nicht immer gelehrt werden. Daher ist es wichtig, sich kontinuierlich weiterzubilden und neue Fähigkeiten zu erlernen. Insgesamt ist Technologie ein wertvolles Werkzeug, das sowohl Chancen als auch Herausforderungen bietet. Es liegt an uns, die Vorteile zu nutzen und die Nachteile zu minimieren.",
-  "date": "2026-04-13T08:39:39.824972+00:00",
-  "category": "technology",
+  "title": "Die Bedeutung von erneuerbaren Energien",
+  "text": "Erneuerbare Energien sind Energiequellen, die sich auf natürliche Weise erneuern. Dazu gehören Solarenergie, Windenergie, Wasserkraft und Biomasse. Diese Energiequellen sind wichtig für den Umweltschutz und die Bekämpfung des Klimawandels. Im Gegensatz zu fossilen Brennstoffen, die begrenzt sind und schädliche Emissionen verursachen, sind erneuerbare Energien nachhaltig und umweltfreundlich. Der Einsatz von Solarenergie hat in den letzten Jahren stark zugenommen. Solarzellen wandeln Sonnenlicht in elektrische Energie um. Windkraftanlagen nutzen die Kraft des Windes, um Strom zu erzeugen. In vielen Ländern gibt es bereits große Windparks. Wasserkraftwerke nutzen die Bewegung von Wasser, um Energie zu produzieren. Biomasse, wie Holz und Pflanzenreste, kann ebenfalls zur Energiegewinnung verwendet werden. Der Übergang zu erneuerbaren Energien ist entscheidend für eine nachhaltige Zukunft. Viele Regierungen fördern den Einsatz dieser Technologien durch Subventionen und Gesetze. Die Umstellung auf erneuerbare Energien schafft zudem neue Arbeitsplätze und stärkt die Wirtschaft. Es ist wichtig, dass jeder Einzelne seinen Beitrag zum Umweltschutz leistet, indem er Energie spart und bewusst mit Ressourcen umgeht.",
+  "date": "2026-04-20T08:42:57.226807+00:00",
+  "category": "science",
   "vocabs": [
     {
-      "word": "Einfluss",
-      "definition": "influence"
+      "word": "erneuerbare Energien",
+      "definition": "renewable energies"
     },
     {
-      "word": "täglich",
-      "definition": "daily"
+      "word": "Umweltschutz",
+      "definition": "environmental protection"
     },
     {
-      "word": "Kommunikation",
-      "definition": "communication"
+      "word": "Klimawandel",
+      "definition": "climate change"
     },
     {
-      "word": "soziale Medien",
-      "definition": "social media"
+      "word": "nachhaltig",
+      "definition": "sustainable"
     },
     {
-      "word": "gesundheitlich",
-      "definition": "health-related"
+      "word": "Solarzellen",
+      "definition": "solar cells"
     },
     {
-      "word": "Abhängigkeit",
-      "definition": "dependence"
+      "word": "Windkraftanlagen",
+      "definition": "wind turbines"
     },
     {
-      "word": "Automatisierung",
-      "definition": "automation"
+      "word": "Wasserkraftwerke",
+      "definition": "hydropower plants"
     },
     {
-      "word": "künstliche Intelligenz",
-      "definition": "artificial intelligence"
+      "word": "Biomasse",
+      "definition": "biomass"
     },
     {
-      "word": "verändern",
-      "definition": "to change"
+      "word": "Subventionen",
+      "definition": "subsidies"
     },
     {
-      "word": "digitale Fähigkeiten",
-      "definition": "digital skills"
+      "word": "Umstellung",
+      "definition": "transition"
     },
     {
-      "word": "weiterbilden",
-      "definition": "to continue education"
+      "word": "Arbeitsplätze",
+      "definition": "jobs"
     },
     {
-      "word": "Herausforderungen",
-      "definition": "challenges"
+      "word": "Ressourcen",
+      "definition": "resources"
     },
     {
-      "word": "Werkzeug",
-      "definition": "tool"
+      "word": "Energie sparen",
+      "definition": "save energy"
     },
     {
-      "word": "minimieren",
-      "definition": "to minimize"
+      "word": "bewusst",
+      "definition": "consciously"
     },
     {
-      "word": "Chancen",
-      "definition": "opportunities"
+      "word": "Technologien",
+      "definition": "technologies"
     }
   ],
   "voice_path": "lessons/latest.mp3"
