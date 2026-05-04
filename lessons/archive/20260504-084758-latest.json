@@ -1,0 +1,49 @@
+{
+  "title": "Die Weimarer Republik: Ein Überblick",
+  "text": "Die Weimarer Republik war die erste demokratische Regierung in Deutschland nach dem Ersten Weltkrieg. Sie wurde 1919 gegründet und dauerte bis 1933. Die Hauptstadt war Weimar, von wo aus die Verfassung erarbeitet wurde. Die Weimarer Republik hatte viele Herausforderungen. Politische Instabilität, wirtschaftliche Krisen und soziale Unruhen prägten diese Zeit. Die Hyperinflation von 1923 führte zu einem dramatischen Wertverlust der deutschen Mark. Viele Menschen verloren ihr Erspartes, was zu großer Verzweiflung führte. Trotz dieser Probleme gab es auch positive Entwicklungen. Die Kultur blühte auf, besonders in den Bereichen Theater, Film und Kunst. Viele berühmte Künstler und Denker lebten in dieser Zeit, wie Bertolt Brecht und Thomas Mann. Die Weimarer Republik endete 1933, als Adolf Hitler an die Macht kam und die Demokratie abschaffte. Die Lehren aus dieser Zeit sind bis heute wichtig, um die Bedeutung von Demokratie und Toleranz zu verstehen.",
+  "date": "2026-04-27T08:48:28.543684+00:00",
+  "category": "history",
+  "vocabs": [
+    {
+      "word": "Republik",
+      "definition": "A form of government in which the country is considered a 'public matter'."
+    },
+    {
+      "word": "demokratisch",
+      "definition": "Relating to a system of government by the whole population or all the eligible members."
+    },
+    {
+      "word": "Herausforderung",
+      "definition": "A difficult task or problem that requires a solution."
+    },
+    {
+      "word": "politische Instabilität",
+      "definition": "A situation where a government is not stable, leading to uncertainty."
+    },
+    {
+      "word": "Hyperinflation",
+      "definition": "An extremely high and typically accelerating inflation rate."
+    },
+    {
+      "word": "Verzweiflung",
+      "definition": "A state of despair, often characterized by a loss of hope."
+    },
+    {
+      "word": "Kultur",
+      "definition": "The arts and other manifestations of human intellectual achievement regarded collectively."
+    },
+    {
+      "word": "denkende",
+      "definition": "Referring to individuals engaged in deep thought or reflection."
+    },
+    {
+      "word": "bedeutend",
+      "definition": "Having great significance or value."
+    },
+    {
+      "word": "Toleranz",
+      "definition": "The ability or willingness to accept the existence of opinions or behavior that one does not necessarily agree with."
+    }
+  ],
+  "voice_path": "lessons/latest.mp3"
+}

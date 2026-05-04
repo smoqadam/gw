@@ -1,48 +1,68 @@
 {
-  "title": "Die Weimarer Republik: Ein Überblick",
-  "text": "Die Weimarer Republik war die erste demokratische Regierung in Deutschland nach dem Ersten Weltkrieg. Sie wurde 1919 gegründet und dauerte bis 1933. Die Hauptstadt war Weimar, von wo aus die Verfassung erarbeitet wurde. Die Weimarer Republik hatte viele Herausforderungen. Politische Instabilität, wirtschaftliche Krisen und soziale Unruhen prägten diese Zeit. Die Hyperinflation von 1923 führte zu einem dramatischen Wertverlust der deutschen Mark. Viele Menschen verloren ihr Erspartes, was zu großer Verzweiflung führte. Trotz dieser Probleme gab es auch positive Entwicklungen. Die Kultur blühte auf, besonders in den Bereichen Theater, Film und Kunst. Viele berühmte Künstler und Denker lebten in dieser Zeit, wie Bertolt Brecht und Thomas Mann. Die Weimarer Republik endete 1933, als Adolf Hitler an die Macht kam und die Demokratie abschaffte. Die Lehren aus dieser Zeit sind bis heute wichtig, um die Bedeutung von Demokratie und Toleranz zu verstehen.",
-  "date": "2026-04-27T08:48:28.543684+00:00",
-  "category": "history",
+  "title": "Die Biografie von Albert Einstein",
+  "text": "Albert Einstein wurde am 14. März 1879 in Ulm, Deutschland, geboren. Er war ein berühmter Physiker, der für seine Theorie der Relativität bekannt ist. Einstein zeigte schon früh Interesse an Wissenschaft und Mathematik. Mit 16 Jahren verließ er die Schule und zog nach Zürich, um an der ETH zu studieren. Nach seinem Abschluss arbeitete er im Patentamt in Bern. Während dieser Zeit entwickelte er einige seiner wichtigsten Ideen. 1905 veröffentlichte er vier revolutionäre Arbeiten, die die Physik veränderten. Diese Arbeiten führten zu seiner Bekanntheit und er wurde schnell als einer der größten Wissenschaftler der Welt anerkannt. 1915 stellte er die allgemeine Relativitätstheorie vor, die das Verständnis von Gravitation revolutionierte. Einstein erhielt 1921 den Nobelpreis für Physik. 1933 emigrierte er aufgrund der politischen Situation in Deutschland in die USA, wo er bis zu seinem Tod 1955 lebte. Sein Einfluss auf die Physik und die Wissenschaft im Allgemeinen ist bis heute spürbar. Einsteins Leben zeigt, wie wichtig Neugier und Kreativität in der Wissenschaft sind.",
+  "date": "2026-05-04T08:47:58.365015+00:00",
+  "category": "biography",
   "vocabs": [
     {
-      "word": "Republik",
-      "definition": "A form of government in which the country is considered a 'public matter'."
+      "word": "berühmt",
+      "definition": "famous"
     },
     {
-      "word": "demokratisch",
-      "definition": "Relating to a system of government by the whole population or all the eligible members."
+      "word": "Physiker",
+      "definition": "physicist"
     },
     {
-      "word": "Herausforderung",
-      "definition": "A difficult task or problem that requires a solution."
+      "word": "Theorie",
+      "definition": "theory"
     },
     {
-      "word": "politische Instabilität",
-      "definition": "A situation where a government is not stable, leading to uncertainty."
+      "word": "Relativität",
+      "definition": "relativity"
     },
     {
-      "word": "Hyperinflation",
-      "definition": "An extremely high and typically accelerating inflation rate."
+      "word": "Interesse",
+      "definition": "interest"
     },
     {
-      "word": "Verzweiflung",
-      "definition": "A state of despair, often characterized by a loss of hope."
+      "word": "revolutionär",
+      "definition": "revolutionary"
     },
     {
-      "word": "Kultur",
-      "definition": "The arts and other manifestations of human intellectual achievement regarded collectively."
+      "word": "Gravitation",
+      "definition": "gravitation"
     },
     {
-      "word": "denkende",
-      "definition": "Referring to individuals engaged in deep thought or reflection."
+      "word": "emigrieren",
+      "definition": "to emigrate"
     },
     {
-      "word": "bedeutend",
-      "definition": "Having great significance or value."
+      "word": "politische Situation",
+      "definition": "political situation"
     },
     {
-      "word": "Toleranz",
-      "definition": "The ability or willingness to accept the existence of opinions or behavior that one does not necessarily agree with."
+      "word": "Einfluss",
+      "definition": "influence"
+    },
+    {
+      "word": "Neugier",
+      "definition": "curiosity"
+    },
+    {
+      "word": "Kreativität",
+      "definition": "creativity"
+    },
+    {
+      "word": "Wissenschaft",
+      "definition": "science"
+    },
+    {
+      "word": "verändern",
+      "definition": "to change"
+    },
+    {
+      "word": "anerkannt",
+      "definition": "recognized"
     }
   ],
   "voice_path": "lessons/latest.mp3"
