@@ -1,0 +1,69 @@
+{
+  "title": "Die Biografie von Albert Einstein",
+  "text": "Albert Einstein wurde am 14. März 1879 in Ulm, Deutschland, geboren. Er war ein berühmter Physiker, der für seine Theorie der Relativität bekannt ist. Einstein zeigte schon früh Interesse an Wissenschaft und Mathematik. Mit 16 Jahren verließ er die Schule und zog nach Zürich, um an der ETH zu studieren. Nach seinem Abschluss arbeitete er im Patentamt in Bern. Während dieser Zeit entwickelte er einige seiner wichtigsten Ideen. 1905 veröffentlichte er vier revolutionäre Arbeiten, die die Physik veränderten. Diese Arbeiten führten zu seiner Bekanntheit und er wurde schnell als einer der größten Wissenschaftler der Welt anerkannt. 1915 stellte er die allgemeine Relativitätstheorie vor, die das Verständnis von Gravitation revolutionierte. Einstein erhielt 1921 den Nobelpreis für Physik. 1933 emigrierte er aufgrund der politischen Situation in Deutschland in die USA, wo er bis zu seinem Tod 1955 lebte. Sein Einfluss auf die Physik und die Wissenschaft im Allgemeinen ist bis heute spürbar. Einsteins Leben zeigt, wie wichtig Neugier und Kreativität in der Wissenschaft sind.",
+  "date": "2026-05-04T08:47:58.365015+00:00",
+  "category": "biography",
+  "vocabs": [
+    {
+      "word": "berühmt",
+      "definition": "famous"
+    },
+    {
+      "word": "Physiker",
+      "definition": "physicist"
+    },
+    {
+      "word": "Theorie",
+      "definition": "theory"
+    },
+    {
+      "word": "Relativität",
+      "definition": "relativity"
+    },
+    {
+      "word": "Interesse",
+      "definition": "interest"
+    },
+    {
+      "word": "revolutionär",
+      "definition": "revolutionary"
+    },
+    {
+      "word": "Gravitation",
+      "definition": "gravitation"
+    },
+    {
+      "word": "emigrieren",
+      "definition": "to emigrate"
+    },
+    {
+      "word": "politische Situation",
+      "definition": "political situation"
+    },
+    {
+      "word": "Einfluss",
+      "definition": "influence"
+    },
+    {
+      "word": "Neugier",
+      "definition": "curiosity"
+    },
+    {
+      "word": "Kreativität",
+      "definition": "creativity"
+    },
+    {
+      "word": "Wissenschaft",
+      "definition": "science"
+    },
+    {
+      "word": "verändern",
+      "definition": "to change"
+    },
+    {
+      "word": "anerkannt",
+      "definition": "recognized"
+    }
+  ],
+  "voice_path": "lessons/latest.mp3"
+}

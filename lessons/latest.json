@@ -1,68 +1,68 @@
 {
-  "title": "Die Biografie von Albert Einstein",
-  "text": "Albert Einstein wurde am 14. März 1879 in Ulm, Deutschland, geboren. Er war ein berühmter Physiker, der für seine Theorie der Relativität bekannt ist. Einstein zeigte schon früh Interesse an Wissenschaft und Mathematik. Mit 16 Jahren verließ er die Schule und zog nach Zürich, um an der ETH zu studieren. Nach seinem Abschluss arbeitete er im Patentamt in Bern. Während dieser Zeit entwickelte er einige seiner wichtigsten Ideen. 1905 veröffentlichte er vier revolutionäre Arbeiten, die die Physik veränderten. Diese Arbeiten führten zu seiner Bekanntheit und er wurde schnell als einer der größten Wissenschaftler der Welt anerkannt. 1915 stellte er die allgemeine Relativitätstheorie vor, die das Verständnis von Gravitation revolutionierte. Einstein erhielt 1921 den Nobelpreis für Physik. 1933 emigrierte er aufgrund der politischen Situation in Deutschland in die USA, wo er bis zu seinem Tod 1955 lebte. Sein Einfluss auf die Physik und die Wissenschaft im Allgemeinen ist bis heute spürbar. Einsteins Leben zeigt, wie wichtig Neugier und Kreativität in der Wissenschaft sind.",
-  "date": "2026-05-04T08:47:58.365015+00:00",
-  "category": "biography",
+  "title": "Umweltschutz: Unsere Verantwortung",
+  "text": "Umweltschutz ist ein wichtiges Thema in der heutigen Gesellschaft. Jeder von uns hat eine Verantwortung, die Umwelt zu schützen. Es gibt viele Möglichkeiten, wie wir unseren Beitrag leisten können. Zum Beispiel können wir unseren Müll reduzieren, indem wir wiederverwendbare Taschen und Behälter verwenden. Recycling ist ebenfalls entscheidend, um wertvolle Ressourcen zu sparen. Ein weiterer wichtiger Aspekt ist der Energieverbrauch. Wir sollten versuchen, unseren Stromverbrauch zu senken, indem wir energieeffiziente Geräte nutzen und Lichter ausschalten, wenn wir einen Raum verlassen. Auch der Einsatz öffentlicher Verkehrsmittel oder das Fahrradfahren anstelle des Autos trägt zur Verringerung von CO2-Emissionen bei. Zudem ist es sinnvoll, regionale und saisonale Produkte zu kaufen, da dies den ökologischen Fußabdruck verringert. Schließlich sollten wir uns auch über Umweltthemen informieren und an lokalen Aktionen teilnehmen. Jeder kleine Schritt zählt und kann einen großen Unterschied machen. Indem wir gemeinsam handeln, können wir eine nachhaltige Zukunft für kommende Generationen schaffen.",
+  "date": "2026-05-11T09:04:49.369230+00:00",
+  "category": "environment",
   "vocabs": [
     {
-      "word": "berühmt",
-      "definition": "famous"
+      "word": "Umweltschutz",
+      "definition": "Environmental protection"
     },
     {
-      "word": "Physiker",
-      "definition": "physicist"
+      "word": "Verantwortung",
+      "definition": "Responsibility"
     },
     {
-      "word": "Theorie",
-      "definition": "theory"
+      "word": "Müll",
+      "definition": "Waste"
     },
     {
-      "word": "Relativität",
-      "definition": "relativity"
+      "word": "reduzieren",
+      "definition": "To reduce"
     },
     {
-      "word": "Interesse",
-      "definition": "interest"
+      "word": "wiederverwendbar",
+      "definition": "Reusable"
     },
     {
-      "word": "revolutionär",
-      "definition": "revolutionary"
+      "word": "Recycling",
+      "definition": "Recycling"
     },
     {
-      "word": "Gravitation",
-      "definition": "gravitation"
+      "word": "Energieverbrauch",
+      "definition": "Energy consumption"
     },
     {
-      "word": "emigrieren",
-      "definition": "to emigrate"
+      "word": "senken",
+      "definition": "To lower"
     },
     {
-      "word": "politische Situation",
-      "definition": "political situation"
+      "word": "österreichische",
+      "definition": "Public transport"
     },
     {
-      "word": "Einfluss",
-      "definition": "influence"
+      "word": "CO2-Emissionen",
+      "definition": "CO2 emissions"
     },
     {
-      "word": "Neugier",
-      "definition": "curiosity"
+      "word": "ökologischer Fußabdruck",
+      "definition": "Ecological footprint"
     },
     {
-      "word": "Kreativität",
-      "definition": "creativity"
+      "word": "regional",
+      "definition": "Regional"
     },
     {
-      "word": "Wissenschaft",
-      "definition": "science"
+      "word": "saisonal",
+      "definition": "Seasonal"
     },
     {
-      "word": "verändern",
-      "definition": "to change"
+      "word": "informieren",
+      "definition": "To inform"
     },
     {
-      "word": "anerkannt",
-      "definition": "recognized"
+      "word": "nachhaltig",
+      "definition": "Sustainable"
     }
   ],
   "voice_path": "lessons/latest.mp3"
