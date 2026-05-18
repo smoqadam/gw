@@ -1,0 +1,69 @@
+{
+  "title": "Umweltschutz: Unsere Verantwortung",
+  "text": "Umweltschutz ist ein wichtiges Thema in der heutigen Gesellschaft. Jeder von uns hat eine Verantwortung, die Umwelt zu schützen. Es gibt viele Möglichkeiten, wie wir unseren Beitrag leisten können. Zum Beispiel können wir unseren Müll reduzieren, indem wir wiederverwendbare Taschen und Behälter verwenden. Recycling ist ebenfalls entscheidend, um wertvolle Ressourcen zu sparen. Ein weiterer wichtiger Aspekt ist der Energieverbrauch. Wir sollten versuchen, unseren Stromverbrauch zu senken, indem wir energieeffiziente Geräte nutzen und Lichter ausschalten, wenn wir einen Raum verlassen. Auch der Einsatz öffentlicher Verkehrsmittel oder das Fahrradfahren anstelle des Autos trägt zur Verringerung von CO2-Emissionen bei. Zudem ist es sinnvoll, regionale und saisonale Produkte zu kaufen, da dies den ökologischen Fußabdruck verringert. Schließlich sollten wir uns auch über Umweltthemen informieren und an lokalen Aktionen teilnehmen. Jeder kleine Schritt zählt und kann einen großen Unterschied machen. Indem wir gemeinsam handeln, können wir eine nachhaltige Zukunft für kommende Generationen schaffen.",
+  "date": "2026-05-11T09:04:49.369230+00:00",
+  "category": "environment",
+  "vocabs": [
+    {
+      "word": "Umweltschutz",
+      "definition": "Environmental protection"
+    },
+    {
+      "word": "Verantwortung",
+      "definition": "Responsibility"
+    },
+    {
+      "word": "Müll",
+      "definition": "Waste"
+    },
+    {
+      "word": "reduzieren",
+      "definition": "To reduce"
+    },
+    {
+      "word": "wiederverwendbar",
+      "definition": "Reusable"
+    },
+    {
+      "word": "Recycling",
+      "definition": "Recycling"
+    },
+    {
+      "word": "Energieverbrauch",
+      "definition": "Energy consumption"
+    },
+    {
+      "word": "senken",
+      "definition": "To lower"
+    },
+    {
+      "word": "österreichische",
+      "definition": "Public transport"
+    },
+    {
+      "word": "CO2-Emissionen",
+      "definition": "CO2 emissions"
+    },
+    {
+      "word": "ökologischer Fußabdruck",
+      "definition": "Ecological footprint"
+    },
+    {
+      "word": "regional",
+      "definition": "Regional"
+    },
+    {
+      "word": "saisonal",
+      "definition": "Seasonal"
+    },
+    {
+      "word": "informieren",
+      "definition": "To inform"
+    },
+    {
+      "word": "nachhaltig",
+      "definition": "Sustainable"
+    }
+  ],
+  "voice_path": "lessons/latest.mp3"
+}
