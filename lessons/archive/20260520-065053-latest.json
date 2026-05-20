@@ -1,0 +1,114 @@
+{
+  "title": "Super League 2025/26 (Schweiz)",
+  "text": "Die Super League 2025/26 ist die 129. Saison der höchsten Schweizer Fussballliga für Männer. Sie begann am 25. Juli 2025. Am 10. April 2026 gab es einen Brand im Kabinentrakt des FC Basel im St. Jakob-Park. Glücklicherweise wurde niemand verletzt, aber es gab viel Rauch und Schäden in den Umkleideräumen. Auch die Materialien für die Spieler und Trainer wurden beschädigt. Das Spiel gegen den FC Thun, das für den 11. April geplant war, musste verschoben werden. Am 35. Spieltag gewann der FC Thun die Meisterschaft. Es ist das erste Mal seit 1998/99, dass ein Verein Meister wird, der nicht aus Zürich, Bern oder Basel kommt. Thun war ab der 8. Runde auf Platz 1 und blieb 13 Spiele lang ungeschlagen. Ein entscheidender Moment war die Niederlage des FC St. Gallen, die Thun den Meistertitel sicherten. Nur der Grasshopper Club Zürich konnte als Aufsteiger in der Saison 1951/52 Meister werden. Am vorletzten Spieltag verlor Thun gegen die BSC Young Boys mit 3:8, während der Abstieg des FC Winterthur feststand. Der Grasshopper Club Zürich muss nun zum dritten Mal in Folge in die Barrage. Der Grasshopper Club Zürich spielt gegen den FC Aarau aus der Challenge League. Die Spieler des FC Thun, die in dieser Saison gespielt haben, sind: Tim Spycher, Niklas Steffen, Asvhin Balaruban, Jan Bamert, Marco Bürki, Lucien Dähler, Fabio Fehr, Dominik Franke, Michael Heule, Genís Montolio, Leonardo Bertone, Adam Ilić, Kastriot Imeri, Vasilije Janjičić, Mattias Käit, Valmir Matoshi, Ethan Meichtry, Nils Reichmuth, Justin Roth, Noah Rupp, Furkan Dursun, Marc Gutbub, Christopher Ibayi, Brighton Labeau und Elmin Rastoder. Der Trainer ist Mauro Lustrinelli. Layton Stewart hat den Verein während der Saison verlassen.",
+  "date": "2026-05-19T23:04:15.310892+00:00",
+  "level": "B1",
+  "topic": null,
+  "source": {
+    "type": "url",
+    "url": "https://de.wikipedia.org/wiki/Super_League_2025/26_(Schweiz)"
+  },
+  "vocabs": [
+    {
+      "word": "Kabinentrakt",
+      "definition": "changing room area",
+      "example": "Am 10. April 2026 gab es einen Brand im Kabinentrakt des FC Basel."
+    },
+    {
+      "word": "Schäden",
+      "definition": "damages",
+      "example": "Aber es gab viel Rauch und Schäden in den Umkleideräumen."
+    },
+    {
+      "word": "verschoben",
+      "definition": "postponed",
+      "example": "Das Spiel gegen den FC Thun, das für den 11. April geplant war, musste verschoben werden."
+    },
+    {
+      "word": "Meisterschaft",
+      "definition": "championship",
+      "example": "Am 35. Spieltag gewann der FC Thun die Meisterschaft."
+    },
+    {
+      "word": "entscheidend",
+      "definition": "decisive",
+      "example": "Ein entscheidender Moment war die Niederlage des FC St. Gallen."
+    },
+    {
+      "word": "Abstieg",
+      "definition": "relegation",
+      "example": "Der Abstieg des FC Winterthur feststand."
+    },
+    {
+      "word": "Barrage",
+      "definition": "play-off",
+      "example": "Der Grasshopper Club Zürich muss nun zum dritten Mal in Folge in die Barrage."
+    },
+    {
+      "word": "Trainer",
+      "definition": "coach",
+      "example": "Der Trainer ist Mauro Lustrinelli."
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "auf Platz 1",
+      "translation": "in first place",
+      "example": "Thun war ab der 8. Runde auf Platz 1."
+    },
+    {
+      "phrase": "zum dritten Mal in Folge",
+      "translation": "for the third time in a row",
+      "example": "Der Grasshopper Club Zürich muss nun zum dritten Mal in Folge in die Barrage."
+    },
+    {
+      "phrase": "feststand",
+      "translation": "was confirmed",
+      "example": "Der Abstieg des FC Winterthur feststand."
+    },
+    {
+      "phrase": "entscheidender Moment",
+      "translation": "decisive moment",
+      "example": "Ein entscheidender Moment war die Niederlage des FC St. Gallen."
+    }
+  ],
+  "quiz": [
+    {
+      "type": "mcq",
+      "q": "Wer gewann die Meisterschaft?",
+      "options": [
+        "FC Basel",
+        "FC Thun",
+        "BSC Young Boys",
+        "Grasshopper Club Zürich"
+      ],
+      "answer": 1,
+      "why": "FC Thun won the championship."
+    },
+    {
+      "type": "cloze",
+      "sentence": "Das Spiel gegen den FC Thun musste ___ werden.",
+      "answer": "verschoben",
+      "why": "The game had to be postponed."
+    },
+    {
+      "type": "mcq",
+      "q": "Wann begann die Super League 2025/26?",
+      "options": [
+        "25. Juli 2025",
+        "10. April 2026",
+        "35. Spieltag",
+        "1. August 2025"
+      ],
+      "answer": 0,
+      "why": "The season started on July 25, 2025."
+    },
+    {
+      "type": "cloze",
+      "sentence": "Der Trainer des FC Thun ist ___ Lustrinelli.",
+      "answer": "Mauro",
+      "why": "The coach of FC Thun is Mauro Lustrinelli."
+    }
+  ],
+  "voice_path": "lessons/latest.mp3"
+}

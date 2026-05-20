@@ -65,5 +65,65 @@
       "definition": "to maximize"
     }
   ],
-  "voice_path": "lessons/latest.mp3"
+  "phrases": [
+    {
+      "phrase": "auf die Flucht",
+      "translation": "to flee",
+      "example": "Die Familie musste 1933 aus Deutschland auf die Flucht."
+    },
+    {
+      "phrase": "eine Botschaft der Hoffnung",
+      "translation": "a message of hope",
+      "example": "Es ist nicht nur ein Zeugnis des Holocaust, sondern auch eine Botschaft der Hoffnung."
+    },
+    {
+      "phrase": "in ständiger Angst",
+      "translation": "in constant fear",
+      "example": "Im Hinterhaus lebte die Familie Frank in ständiger Angst."
+    },
+    {
+      "phrase": "von großer Bedeutung",
+      "translation": "of great importance",
+      "example": "Annes Worte sind heute noch von großer Bedeutung."
+    }
+  ],
+  "quiz": [
+    {
+      "type": "mcq",
+      "q": "Wann wurde Anne Frank geboren?",
+      "options": [
+        "1929",
+        "1933",
+        "1942",
+        "1945"
+      ],
+      "answer": 0,
+      "why": "Anne Frank wurde am 12. Juni 1929 geboren."
+    },
+    {
+      "type": "mcq",
+      "q": "In welches Land zog die Familie Frank?",
+      "options": [
+        "Deutschland",
+        "Frankreich",
+        "Niederlande",
+        "Österreich"
+      ],
+      "answer": 2,
+      "why": "Die Familie Frank zog nach Amsterdam in die Niederlande."
+    },
+    {
+      "type": "cloze",
+      "sentence": "Anne erhielt ein Tagebuch zu ihrem ___ Geburtstag.",
+      "answer": "13.",
+      "why": "Anne erhielt das Tagebuch zu ihrem 13. Geburtstag."
+    },
+    {
+      "type": "cloze",
+      "sentence": "Die Familie Frank wurde im August 1944 ___",
+      "answer": "deportiert",
+      "why": "Die Familie Frank wurde im August 1944 deportiert."
+    }
+  ],
+  "voice_path": ""
 }
