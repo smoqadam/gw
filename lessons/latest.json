@@ -1,129 +1,126 @@
 {
-  "title": "Die Bedeutung von Technologie im Alltag",
-  "text": "Technologie spielt eine wichtige Rolle in unserem täglichen Leben. Heutzutage nutzen wir Smartphones, Computer und das Internet für verschiedene Zwecke. Zum Beispiel erleichtern uns diese Geräte die Kommunikation mit Freunden und Familie. Mit sozialen Medien können wir in Kontakt bleiben, egal wo wir sind. Außerdem hat Technologie die Art und Weise, wie wir arbeiten, verändert. Viele Menschen arbeiten jetzt von zu Hause aus, was durch Videokonferenzen und Online-Tools möglich ist. Diese neuen Arbeitsmethoden bieten mehr Flexibilität und können die Produktivität steigern. Allerdings gibt es auch Nachteile, wie die Gefahr von Ablenkungen und die Herausforderung, Arbeit und Freizeit zu trennen. Ein weiterer wichtiger Aspekt ist der Einfluss von Technologie auf die Bildung. Lernplattformen und Online-Kurse ermöglichen es den Menschen, jederzeit und überall zu lernen. Dies hat den Zugang zu Wissen revolutioniert und bietet viele neue Möglichkeiten. Zusammenfassend lässt sich sagen, dass Technologie sowohl Vorteile als auch Herausforderungen mit sich bringt. Wir müssen lernen, sie effektiv zu nutzen, um die positiven Aspekte zu maximieren und die negativen zu minimieren.",
-  "date": "2026-05-18T09:06:47.550439+00:00",
-  "category": "technology",
+  "title": "Sokrates und das Wissen um das Nichtwissen",
+  "text": "Sokrates (470–399 v. Chr.) war ein griechischer Philosoph, der als einer der „Väter“ der Philosophie gilt. Er war der Lehrer von Platon (428/427–348/347), der wiederum Aristoteles unterrichtete. Diese drei Denker sind zentral für die westliche Philosophie. Sokrates hinterließ keine eigenen Schriften. Stattdessen diskutierte er mit den Bürgern Athens auf dem Marktplatz. Er stellte Fragen, die die Menschen dazu brachten, ihre Annahmen zu hinterfragen. Diese Methode führte oft dazu, dass sich die Menschen ihrer Unwissenheit bewusst wurden. Mit der Zeit machte sich Sokrates Feinde unter den prominenten Bürgern, die ihn beschuldigten, die Jugend zu verderben. Er wurde vor Gericht gestellt. Bei seinem Prozess weigerte sich Sokrates, sich zu entschuldigen. Stattdessen forderte er eine Belohnung für seine Dienste. Er wurde zum Tode verurteilt, lehnte es jedoch ab, zu fliehen. So wurde er zum Märtyrer für die Wahrheit. In Platons Werk „Apologie des Sokrates“ wird seine Verteidigungsrede überliefert. Sokrates betonte, dass wahres Wissen bedeutet, sich seiner Unwissenheit bewusst zu sein. Er sagte, dass er wenig wisse, aber nicht so tue, als wisse er mehr. Das wahre Problem sei nicht das Nichtwissen, sondern die Illusion des Wissens. Menschen, die glauben, viel zu wissen, sind oft schwerer zu belehren. Sokrates sagte: „Es gibt viele Menschen, die denken, sie wüssten etwas, wissen aber wenig oder nichts.“ Am Ende seiner Rede sagte er: „Die Stunde des Abschieds ist gekommen, und wir gehen unsere Wege – ich, um zu sterben, und ihr, um zu leben. Was besser ist, weiß nur Gott.“",
+  "date": "2026-05-21T18:01:23.978799+00:00",
+  "level": "B2",
+  "topic": null,
+  "source": {
+    "type": "url",
+    "url": "https://daily-philosophy.com/quotes-socrates-knowing-nothing/"
+  },
   "vocabs": [
     {
-      "word": "Rolle",
-      "definition": "role"
+      "word": "Marktplatz",
+      "definition": "marketplace",
+      "example": "Stattdessen diskutierte er mit den Bürgern Athens auf dem Marktplatz."
     },
     {
-      "word": "Kommunikation",
-      "definition": "communication"
+      "word": "Annahmen",
+      "definition": "assumptions",
+      "example": "Er stellte Fragen, die die Menschen dazu brachten, ihre Annahmen zu hinterfragen."
     },
     {
-      "word": "sozialen Medien",
-      "definition": "social media"
+      "word": "Feinde",
+      "definition": "enemies",
+      "example": "Mit der Zeit machte sich Sokrates Feinde unter den prominenten Bürgern."
     },
     {
-      "word": "Videokonferenzen",
-      "definition": "video conferences"
+      "word": "beschuldigten",
+      "definition": "accused",
+      "example": "die ihn beschuldigten, die Jugend zu verderben."
     },
     {
-      "word": "Flexibilität",
-      "definition": "flexibility"
+      "word": "verurteilt",
+      "definition": "sentenced",
+      "example": "Er wurde zum Tode verurteilt, lehnte es jedoch ab, zu fliehen."
     },
     {
-      "word": "Produktivität",
-      "definition": "productivity"
+      "word": "Märtyrer",
+      "definition": "martyr",
+      "example": "So wurde er zum Märtyrer für die Wahrheit."
     },
     {
-      "word": "Ablenkungen",
-      "definition": "distractions"
+      "word": "Verteidigungsrede",
+      "definition": "defense speech",
+      "example": "In Platons Werk „Apologie des Sokrates“ wird seine Verteidigungsrede überliefert."
     },
     {
-      "word": "Herausforderung",
-      "definition": "challenge"
-    },
-    {
-      "word": "Einfluss",
-      "definition": "influence"
-    },
-    {
-      "word": "Bildung",
-      "definition": "education"
-    },
-    {
-      "word": "Lernplattformen",
-      "definition": "learning platforms"
-    },
-    {
-      "word": "Zugang",
-      "definition": "access"
-    },
-    {
-      "word": "revolutioniert",
-      "definition": "revolutionized"
-    },
-    {
-      "word": "möchten",
-      "definition": "to want"
-    },
-    {
-      "word": "maximieren",
-      "definition": "to maximize"
+      "word": "Illusion",
+      "definition": "illusion",
+      "example": "Das wahre Problem sei nicht das Nichtwissen, sondern die Illusion des Wissens."
     }
   ],
   "phrases": [
     {
-      "phrase": "auf die Flucht",
-      "translation": "to flee",
-      "example": "Die Familie musste 1933 aus Deutschland auf die Flucht."
+      "phrase": "zum Tode verurteilt",
+      "translation": "sentenced to death",
+      "example": "Er wurde zum Tode verurteilt, lehnte es jedoch ab, zu fliehen."
     },
     {
-      "phrase": "eine Botschaft der Hoffnung",
-      "translation": "a message of hope",
-      "example": "Es ist nicht nur ein Zeugnis des Holocaust, sondern auch eine Botschaft der Hoffnung."
+      "phrase": "sich seiner Unwissenheit bewusst",
+      "translation": "aware of one's ignorance",
+      "example": "Sokrates betonte, dass wahres Wissen bedeutet, sich seiner Unwissenheit bewusst zu sein."
     },
     {
-      "phrase": "in ständiger Angst",
-      "translation": "in constant fear",
-      "example": "Im Hinterhaus lebte die Familie Frank in ständiger Angst."
+      "phrase": "zum Märtyrer für die Wahrheit",
+      "translation": "a martyr for the truth",
+      "example": "So wurde er zum Märtyrer für die Wahrheit."
     },
     {
-      "phrase": "von großer Bedeutung",
-      "translation": "of great importance",
-      "example": "Annes Worte sind heute noch von großer Bedeutung."
+      "phrase": "die Jugend zu verderben",
+      "translation": "to corrupt the youth",
+      "example": "die ihn beschuldigten, die Jugend zu verderben."
     }
   ],
   "quiz": [
     {
       "type": "mcq",
-      "q": "Wann wurde Anne Frank geboren?",
+      "q": "Was bedeutet 'Märtyrer'?",
       "options": [
-        "1929",
-        "1933",
-        "1942",
-        "1945"
+        "teacher",
+        "martyr",
+        "philosopher",
+        "defendant"
       ],
-      "answer": 0,
-      "why": "Anne Frank wurde am 12. Juni 1929 geboren."
+      "answer": 1,
+      "why": "'Märtyrer' means 'martyr' in English."
+    },
+    {
+      "type": "cloze",
+      "sentence": "Sokrates wurde ___, lehnte es jedoch ab, zu fliehen.",
+      "answer": "verurteilt",
+      "why": "The verb 'verurteilt' means 'sentenced', fitting the context."
     },
     {
       "type": "mcq",
-      "q": "In welches Land zog die Familie Frank?",
+      "q": "Was ist ein 'Marktplatz'?",
       "options": [
-        "Deutschland",
-        "Frankreich",
-        "Niederlande",
-        "Österreich"
+        "a courtroom",
+        "a marketplace",
+        "a school",
+        "a temple"
       ],
-      "answer": 2,
-      "why": "Die Familie Frank zog nach Amsterdam in die Niederlande."
+      "answer": 1,
+      "why": "'Marktplatz' translates to 'marketplace'."
     },
     {
       "type": "cloze",
-      "sentence": "Anne erhielt ein Tagebuch zu ihrem ___ Geburtstag.",
-      "answer": "13.",
-      "why": "Anne erhielt das Tagebuch zu ihrem 13. Geburtstag."
+      "sentence": "Sokrates machte sich ___ unter den prominenten Bürgern.",
+      "answer": "Feinde",
+      "why": "In this context, 'Feinde' means 'enemies'."
     },
     {
-      "type": "cloze",
-      "sentence": "Die Familie Frank wurde im August 1944 ___",
-      "answer": "deportiert",
-      "why": "Die Familie Frank wurde im August 1944 deportiert."
+      "type": "mcq",
+      "q": "Welche Bedeutung hat 'Illusion des Wissens'?",
+      "options": [
+        "true knowledge",
+        "false belief of knowing",
+        "ignorance",
+        "education"
+      ],
+      "answer": 1,
+      "why": "It refers to the false belief of knowing something."
     }
   ],
-  "voice_path": ""
+  "voice_path": "lessons/latest.mp3"
 }
