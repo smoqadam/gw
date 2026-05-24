@@ -1049,3 +1049,9 @@ audio::-webkit-media-controls-panel {
   .grammar-section table { font-size: 14px; display: block; overflow-x: auto; }
   .watch-out { padding: 20px 22px; margin: 40px 0; }
 }
+
+
+.panel-chip-static {
+  cursor: default;
+  pointer-events: none;
+}
