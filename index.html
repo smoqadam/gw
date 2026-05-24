@@ -291,8 +291,30 @@
         if (entry.german_definition) {
           body.appendChild(el("div", { class: "panel-def-de", text: entry.german_definition }));
         }
-        if (entry.english_translations && entry.english_translations.length > 0) {
-          body.appendChild(el("div", { class: "panel-def-en", text: entry.english_translations.join(',') }));
+
+        if (entry.english_translations && entry.english_translations.length) {
+          const sec = el("div", { class: "panel-section" });
+        
+          sec.appendChild(
+            el("div", {
+              class: "panel-section-label",
+              text: "English"
+            })
+          );
+        
+          const chips = el("div", { class: "panel-related" });
+        
+          for (const t of entry.english_translations) {
+            chips.appendChild(
+              el("div", {
+                class: "panel-chip panel-chip-static",
+                html: `<b>${t}</b>`
+              })
+            );
+          }
+        
+          sec.appendChild(chips);
+          body.appendChild(sec);
         }
 
         if (entry.examples && entry.examples.length) {
