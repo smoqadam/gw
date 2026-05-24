@@ -291,8 +291,8 @@
         if (entry.german_definition) {
           body.appendChild(el("div", { class: "panel-def-de", text: entry.german_definition }));
         }
-        if (entry.english_definition && entry.english_def.len > 0) {
-          body.appendChild(el("div", { class: "panel-def-en", text: entry.english_definition.join(',') }));
+        if (entry.english_translations && entry.english_translations.len > 0) {
+          body.appendChild(el("div", { class: "panel-def-en", text: entry.english_translations.join(',') }));
         }
 
         if (entry.examples && entry.examples.length) {
