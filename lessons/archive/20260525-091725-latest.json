@@ -1,0 +1,126 @@
+{
+  "title": "Sokrates und das Wissen um das Nichtwissen",
+  "text": "Sokrates (470–399 v. Chr.) war ein griechischer Philosoph, der als einer der „Väter“ der Philosophie gilt. Er war der Lehrer von Platon (428/427–348/347), der wiederum Aristoteles unterrichtete. Diese drei Denker sind zentral für die westliche Philosophie. Sokrates hinterließ keine eigenen Schriften. Stattdessen diskutierte er mit den Bürgern Athens auf dem Marktplatz. Er stellte Fragen, die die Menschen dazu brachten, ihre Annahmen zu hinterfragen. Diese Methode führte oft dazu, dass sich die Menschen ihrer Unwissenheit bewusst wurden. Mit der Zeit machte sich Sokrates Feinde unter den prominenten Bürgern, die ihn beschuldigten, die Jugend zu verderben. Er wurde vor Gericht gestellt. Bei seinem Prozess weigerte sich Sokrates, sich zu entschuldigen. Stattdessen forderte er eine Belohnung für seine Dienste. Er wurde zum Tode verurteilt, lehnte es jedoch ab, zu fliehen. So wurde er zum Märtyrer für die Wahrheit. In Platons Werk „Apologie des Sokrates“ wird seine Verteidigungsrede überliefert. Sokrates betonte, dass wahres Wissen bedeutet, sich seiner Unwissenheit bewusst zu sein. Er sagte, dass er wenig wisse, aber nicht so tue, als wisse er mehr. Das wahre Problem sei nicht das Nichtwissen, sondern die Illusion des Wissens. Menschen, die glauben, viel zu wissen, sind oft schwerer zu belehren. Sokrates sagte: „Es gibt viele Menschen, die denken, sie wüssten etwas, wissen aber wenig oder nichts.“ Am Ende seiner Rede sagte er: „Die Stunde des Abschieds ist gekommen, und wir gehen unsere Wege – ich, um zu sterben, und ihr, um zu leben. Was besser ist, weiß nur Gott.“",
+  "date": "2026-05-21T18:01:23.978799+00:00",
+  "level": "B2",
+  "topic": null,
+  "source": {
+    "type": "url",
+    "url": "https://daily-philosophy.com/quotes-socrates-knowing-nothing/"
+  },
+  "vocabs": [
+    {
+      "word": "Marktplatz",
+      "definition": "marketplace",
+      "example": "Stattdessen diskutierte er mit den Bürgern Athens auf dem Marktplatz."
+    },
+    {
+      "word": "Annahmen",
+      "definition": "assumptions",
+      "example": "Er stellte Fragen, die die Menschen dazu brachten, ihre Annahmen zu hinterfragen."
+    },
+    {
+      "word": "Feinde",
+      "definition": "enemies",
+      "example": "Mit der Zeit machte sich Sokrates Feinde unter den prominenten Bürgern."
+    },
+    {
+      "word": "beschuldigten",
+      "definition": "accused",
+      "example": "die ihn beschuldigten, die Jugend zu verderben."
+    },
+    {
+      "word": "verurteilt",
+      "definition": "sentenced",
+      "example": "Er wurde zum Tode verurteilt, lehnte es jedoch ab, zu fliehen."
+    },
+    {
+      "word": "Märtyrer",
+      "definition": "martyr",
+      "example": "So wurde er zum Märtyrer für die Wahrheit."
+    },
+    {
+      "word": "Verteidigungsrede",
+      "definition": "defense speech",
+      "example": "In Platons Werk „Apologie des Sokrates“ wird seine Verteidigungsrede überliefert."
+    },
+    {
+      "word": "Illusion",
+      "definition": "illusion",
+      "example": "Das wahre Problem sei nicht das Nichtwissen, sondern die Illusion des Wissens."
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "zum Tode verurteilt",
+      "translation": "sentenced to death",
+      "example": "Er wurde zum Tode verurteilt, lehnte es jedoch ab, zu fliehen."
+    },
+    {
+      "phrase": "sich seiner Unwissenheit bewusst",
+      "translation": "aware of one's ignorance",
+      "example": "Sokrates betonte, dass wahres Wissen bedeutet, sich seiner Unwissenheit bewusst zu sein."
+    },
+    {
+      "phrase": "zum Märtyrer für die Wahrheit",
+      "translation": "a martyr for the truth",
+      "example": "So wurde er zum Märtyrer für die Wahrheit."
+    },
+    {
+      "phrase": "die Jugend zu verderben",
+      "translation": "to corrupt the youth",
+      "example": "die ihn beschuldigten, die Jugend zu verderben."
+    }
+  ],
+  "quiz": [
+    {
+      "type": "mcq",
+      "q": "Was bedeutet 'Märtyrer'?",
+      "options": [
+        "teacher",
+        "martyr",
+        "philosopher",
+        "defendant"
+      ],
+      "answer": 1,
+      "why": "'Märtyrer' means 'martyr' in English."
+    },
+    {
+      "type": "cloze",
+      "sentence": "Sokrates wurde ___, lehnte es jedoch ab, zu fliehen.",
+      "answer": "verurteilt",
+      "why": "The verb 'verurteilt' means 'sentenced', fitting the context."
+    },
+    {
+      "type": "mcq",
+      "q": "Was ist ein 'Marktplatz'?",
+      "options": [
+        "a courtroom",
+        "a marketplace",
+        "a school",
+        "a temple"
+      ],
+      "answer": 1,
+      "why": "'Marktplatz' translates to 'marketplace'."
+    },
+    {
+      "type": "cloze",
+      "sentence": "Sokrates machte sich ___ unter den prominenten Bürgern.",
+      "answer": "Feinde",
+      "why": "In this context, 'Feinde' means 'enemies'."
+    },
+    {
+      "type": "mcq",
+      "q": "Welche Bedeutung hat 'Illusion des Wissens'?",
+      "options": [
+        "true knowledge",
+        "false belief of knowing",
+        "ignorance",
+        "education"
+      ],
+      "answer": 1,
+      "why": "It refers to the false belief of knowing something."
+    }
+  ],
+  "voice_path": "lessons/latest.mp3"
+}
