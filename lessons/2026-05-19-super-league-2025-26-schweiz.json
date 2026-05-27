@@ -110,5 +110,7 @@
       "why": "The coach of FC Thun is Mauro Lustrinelli."
     }
   ],
-  "voice_path": "lessons/latest.mp3"
+  "voice_path": "lessons/2026-05-19-super-league-2025-26-schweiz.mp3",
+  "type": "text",
+  "id": "2026-05-19-super-league-2025-26-schweiz"
 }

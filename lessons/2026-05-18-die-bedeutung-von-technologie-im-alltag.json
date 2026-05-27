@@ -109,5 +109,11 @@
       "why": "The phrase 'in der Regel' means 'as a rule', indicating a standard or usual amount."
     }
   ],
+<<<<<<< HEAD:lessons/latest.json
   "voice_path": "lessons/latest.mp3"
+=======
+  "voice_path": "",
+  "type": "text",
+  "id": "2026-05-18-die-bedeutung-von-technologie-im-alltag"
+>>>>>>> 36b98da (add video lessons, add access to old lessons):lessons/2026-05-18-die-bedeutung-von-technologie-im-alltag.json
 }

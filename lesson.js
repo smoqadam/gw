@@ -1,77 +1,4 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>German Weekly</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <nav class="nav">
-      <div class="nav-left">
-        <button class="menu-btn" id="menu-btn" type="button" aria-label="Browse lessons">☰</button>
-        <a href="./" class="brand">German<span class="sep">·</span>Weekly</a>
-      </div>
-      <div class="nav-links">
-        <a href="deck.html">Deck<span class="deck-count" id="deck-count"></span></a>
-      </div>
-    </nav>
 
-    <aside class="drawer" id="drawer" aria-hidden="true" aria-label="Lessons">
-      <div class="drawer-head">Lessons</div>
-      <nav class="drawer-list" id="drawer-list"></nav>
-    </aside>
-    <div class="drawer-overlay" id="drawer-overlay" hidden></div>
-
-    <main>
-      <div class="eyebrow" id="meta">Loading…</div>
-      <h1 class="title" id="title">German Weekly</h1>
-      <div class="audio-wrap">
-        <audio id="audio" controls hidden></audio>
-      </div>
-
-      <div class="video-layout" id="video-layout" hidden>
-        <div class="video-col">
-          <div class="video-frame"><div id="player"></div></div>
-        </div>
-        <div class="transcript" id="transcript"></div>
-      </div>
-
-      <article class="text" id="text"></article>
-
-      <section id="vocab-section" hidden>
-        <div class="section-label">Vocabulary</div>
-        <div class="glossary" id="vocabs"></div>
-      </section>
-
-      <section id="phrases-section" hidden>
-        <div class="section-label">Phrases</div>
-        <div class="glossary" id="phrases"></div>
-      </section>
-
-      <section id="quiz-section" hidden>
-        <div class="section-label">Quiz</div>
-        <ol class="quiz" id="quiz"></ol>
-      </section>
-
-      <p class="audience-hint">
-        Designed for learners with basic German. New to the language? Start with
-        <a href="https://learngerman.dw.com/de/nicos-weg/c-36519687" target="_blank" rel="noopener">DW's Nicos Weg →</a>
-      </p>
-    </main>
-
-    <aside class="lookup-panel" id="lookup-panel" aria-hidden="true" role="dialog" aria-label="Dictionary lookup">
-      <div class="panel-header">
-        <div class="panel-headword" id="panel-headword"></div>
-        <button class="panel-close" aria-label="Close" type="button">✕</button>
-      </div>
-      <div class="panel-body" id="panel-body"></div>
-    </aside>
-
-<<<<<<< HEAD
-    <script>
       function el(tag, opts = {}, ...children) {
         const node = document.createElement(tag);
         if (opts.class) node.className = opts.class;
@@ -79,6 +6,21 @@
         if (opts.attrs) for (const [k, v] of Object.entries(opts.attrs)) node.setAttribute(k, v);
         for (const c of children) if (c) node.appendChild(c);
         return node;
+      }
+
+      let currentSaveCtx = null;
+      let currentLessonLabel = "";
+
+      function formatTime(seconds) {
+        const s = Math.floor(seconds);
+        return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, "0")}`;
+      }
+
+      function refreshDeckCount() {
+        const counter = document.getElementById("deck-count");
+        if (!counter || !window.Deck) return;
+        const n = Deck.count();
+        counter.textContent = n ? String(n) : "";
       }
 
       function sourceLabel(source) {
@@ -291,6 +233,38 @@
         }
 
         body.textContent = "";
+
+        const saveTerm = entry.word || (currentSaveCtx && currentSaveCtx.word) || "";
+        if (saveTerm && window.Deck) {
+          const row = el("div", { class: "panel-save" });
+          const btn = el("button", { class: "save-btn" });
+          btn.type = "button";
+          const setState = () => {
+            if (Deck.has(saveTerm)) {
+              btn.textContent = "Saved ✓";
+              btn.classList.add("saved");
+              btn.disabled = true;
+            } else {
+              btn.textContent = "+ Save to deck";
+            }
+          };
+          setState();
+          btn.addEventListener("click", (e) => {
+            e.stopPropagation();
+            Deck.add({
+              term: saveTerm,
+              article: entry.article || "",
+              definition: entry.english_definition || entry.german_definition || "",
+              example: (currentSaveCtx && currentSaveCtx.sentence) || "",
+              source: currentLessonLabel || "",
+            });
+            setState();
+            refreshDeckCount();
+          });
+          row.appendChild(btn);
+          body.appendChild(row);
+        }
+
         const metaParts = [];
         if (entry.part_of_speech) metaParts.push({ text: entry.part_of_speech });
         if (entry.ipa) metaParts.push({ text: entry.ipa, ipa: true });
@@ -308,30 +282,8 @@
         if (entry.german_definition) {
           body.appendChild(el("div", { class: "panel-def-de", text: entry.german_definition }));
         }
-
-        if (entry.english_translations && entry.english_translations.length) {
-          const sec = el("div", { class: "panel-section" });
-        
-          sec.appendChild(
-            el("div", {
-              class: "panel-section-label",
-              text: "English"
-            })
-          );
-        
-          const chips = el("div", { class: "panel-related" });
-        
-          for (const t of entry.english_translations) {
-            chips.appendChild(
-              el("div", {
-                class: "panel-chip panel-chip-static",
-                text: `${t}`,
-              })
-            );
-          }
-        
-          sec.appendChild(chips);
-          body.appendChild(sec);
+        if (entry.english_definition) {
+          body.appendChild(el("div", { class: "panel-def-en", text: entry.english_definition }));
         }
 
         if (entry.examples && entry.examples.length) {
@@ -380,6 +332,12 @@
         }
 
         setActiveWord(anchorEl);
+        const sentenceEl = anchorEl && (anchorEl.closest("[data-sentence]") || anchorEl.closest("p"));
+        const sentence = sentenceEl
+          ? (sentenceEl.dataset.sentence || sentenceEl.textContent.trim())
+          : "";
+        currentSaveCtx = { word, sentence };
+
         panel.classList.add("open");
         panel.setAttribute("aria-hidden", "false");
         body.scrollTop = 0;
@@ -424,9 +382,9 @@
       }
 
       function wireLookup() {
-        document.getElementById("text").addEventListener("click", (e) => {
+        document.querySelector("main").addEventListener("click", (e) => {
           const wordEl = e.target.closest(".word");
-          if (!wordEl) return;
+          if (!wordEl || !wordEl.dataset.q) return;
           e.stopPropagation();
           openLookup(wordEl.dataset.q, wordEl);
         });
@@ -443,6 +401,157 @@
         });
       }
 
+      let currentSegments = [];
+      let ytPlayer = null;
+      let syncTimer = null;
+      let lastActiveStart = null;
+
+      function renderSegments(segments) {
+        const container = document.getElementById("transcript");
+        container.textContent = "";
+        segments.forEach((seg, i) => {
+          const p = el("p", { class: "segment" });
+          p.dataset.start = seg.start;
+          p.dataset.index = i;
+          p.dataset.sentence = seg.text;
+          const time = el("button", { class: "seg-time", text: formatTime(seg.start) });
+          time.type = "button";
+          p.appendChild(time);
+          for (const t of tokenizeParagraph(seg.text)) {
+            if (t.word) {
+              const span = document.createElement("span");
+              span.className = "word";
+              span.textContent = t.text;
+              span.dataset.q = t.text;
+              p.appendChild(span);
+            } else {
+              p.appendChild(document.createTextNode(t.text));
+            }
+          }
+          container.appendChild(p);
+        });
+      }
+
+      function wireSeek() {
+        document.getElementById("transcript").addEventListener("click", (e) => {
+          if (e.target.closest(".word")) return;
+          const seg = e.target.closest(".segment");
+          if (!seg || !ytPlayer || !ytPlayer.seekTo) return;
+          ytPlayer.seekTo(Number(seg.dataset.start), true);
+          if (ytPlayer.playVideo) ytPlayer.playVideo();
+        });
+      }
+
+      function matchTranscriptHeight() {
+        const layout = document.getElementById("video-layout");
+        if (!layout || layout.hidden) return;
+        const box = document.getElementById("transcript");
+        const frame = layout.querySelector(".video-frame");
+        if (window.innerWidth <= 720) { box.style.height = ""; return; }
+        if (frame && box) box.style.height = frame.offsetHeight + "px";
+      }
+      window.addEventListener("resize", matchTranscriptHeight);
+
+      function highlightByStart(activeStart) {
+        const box = document.getElementById("transcript");
+        let firstActive = null;
+        box.querySelectorAll(".segment").forEach((p) => {
+          const on = Number(p.dataset.start) === activeStart;
+          p.classList.toggle("current", on);
+          if (on && !firstActive) firstActive = p;
+        });
+        if (firstActive) {
+          const top = firstActive.offsetTop - box.clientHeight / 2 + firstActive.offsetHeight / 2;
+          box.scrollTo({ top, behavior: "smooth" });
+        }
+      }
+
+      function startSync() {
+        if (syncTimer) clearInterval(syncTimer);
+        const starts = currentSegments.map((s) => Number(s.start));
+        syncTimer = setInterval(() => {
+          if (!ytPlayer || !ytPlayer.getCurrentTime) return;
+          let t;
+          try { t = ytPlayer.getCurrentTime(); } catch (_) { return; }
+          let idx = -1;
+          for (let i = 0; i < starts.length; i++) {
+            if (starts[i] <= t + 0.05) idx = i;
+            else break;
+          }
+          if (idx < 0) return;
+          const activeStart = starts[idx];
+          if (activeStart === lastActiveStart) return;
+          lastActiveStart = activeStart;
+          highlightByStart(activeStart);
+        }, 250);
+      }
+
+      function loadYouTubePlayer(videoId) {
+        window.onYouTubeIframeAPIReady = function () {
+          ytPlayer = new YT.Player("player", {
+            videoId,
+            playerVars: { rel: 0, modestbranding: 1, cc_load_policy: 0 },
+            events: { onReady: () => { matchTranscriptHeight(); startSync(); } },
+          });
+        };
+        if (window.YT && window.YT.Player) {
+          window.onYouTubeIframeAPIReady();
+        } else if (!document.getElementById("yt-api")) {
+          const tag = document.createElement("script");
+          tag.id = "yt-api";
+          tag.src = "https://www.youtube.com/iframe_api";
+          document.head.appendChild(tag);
+        }
+      }
+
+      function renderVideo(lesson) {
+        document.body.classList.add("video-lesson");
+        document.getElementById("audio").hidden = true;
+        document.getElementById("text").hidden = true;
+        currentSegments = lesson.segments || [];
+        renderSegments(currentSegments);
+        document.getElementById("video-layout").hidden = false;
+        matchTranscriptHeight();
+        wireSeek();
+        if (lesson.video_id) loadYouTubePlayer(lesson.video_id);
+      }
+
+      function buildDrawer(index) {
+        const list = document.getElementById("drawer-list");
+        list.textContent = "";
+        for (const e of index) {
+          const a = el("a", { class: "drawer-item" });
+          a.href = `?lesson=${encodeURIComponent(e.id)}`;
+          a.dataset.id = e.id;
+          a.appendChild(el("span", {
+            class: "di-type " + (e.type === "video" ? "is-video" : "is-text"),
+            text: e.type === "video" ? "▶" : "¶",
+          }));
+          const body = el("div", { class: "di-body" });
+          body.appendChild(el("div", { class: "di-title", text: e.title || "Untitled" }));
+          const d = new Date(e.date);
+          const date = isNaN(d) ? "" : d.toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" });
+          body.appendChild(el("div", { class: "di-meta", text: date + (e.level ? " · " + e.level : "") }));
+          a.appendChild(body);
+          list.appendChild(a);
+        }
+      }
+
+      function markActiveInDrawer(id) {
+        document.querySelectorAll(".drawer-item").forEach((a) =>
+          a.classList.toggle("active", a.dataset.id === id));
+      }
+
+      function wireDrawer() {
+        const drawer = document.getElementById("drawer");
+        const overlay = document.getElementById("drawer-overlay");
+        const open = () => { drawer.classList.add("open"); drawer.setAttribute("aria-hidden", "false"); overlay.hidden = false; };
+        const close = () => { drawer.classList.remove("open"); drawer.setAttribute("aria-hidden", "true"); overlay.hidden = true; };
+        document.getElementById("menu-btn").addEventListener("click", open);
+        overlay.addEventListener("click", close);
+        document.addEventListener("keydown", (e) => { if (e.key === "Escape") close(); });
+      }
+
       async function loadLesson() {
         const meta = document.getElementById("meta");
         const title = document.getElementById("title");
@@ -450,14 +559,47 @@
         const audio = document.getElementById("audio");
 
         try {
-          const response = await fetch("lessons/latest.json", { cache: "no-store" });
-          if (!response.ok) throw new Error("No lesson found yet.");
+          const indexResp = await fetch("lessons/index.json", { cache: "no-store" });
+          if (!indexResp.ok) throw new Error("No lessons yet.");
+          const index = await indexResp.json();
+          buildDrawer(index);
+          if (!index.length) throw new Error("No lessons yet.");
+
+          const wanted = new URLSearchParams(location.search).get("lesson");
+          let entry;
+          if (wanted) {
+            entry = index.find((e) => e.id === wanted);
+            if (!entry) throw new Error("Lesson not found.");
+          } else {
+            entry = index[0];
+          }
+          markActiveInDrawer(entry.id);
+
+          const response = await fetch(`lessons/${entry.id}.json`, { cache: "no-store" });
+          if (!response.ok) throw new Error("Lesson not found.");
           const lesson = await response.json();
 
           title.textContent = lesson.title || "German Weekly";
           document.title = `${lesson.title || "German Weekly"} — German Weekly`;
+          currentLessonLabel = lesson.title || "";
 
           renderMeta(lesson);
+
+          // A non-video lesson must never show or load the YouTube player:
+          // tear down any player, stop syncing, and hide the video layout.
+          if (syncTimer) { clearInterval(syncTimer); syncTimer = null; }
+          if (ytPlayer && ytPlayer.destroy) { try { ytPlayer.destroy(); } catch (_) {} }
+          ytPlayer = null;
+          lastActiveStart = null;
+          document.body.classList.remove("video-lesson");
+          document.getElementById("video-layout").hidden = true;
+          text.hidden = false;
+
+          if (lesson.type === "video") {
+            renderVideo(lesson);
+            return;
+          }
+
           renderText(lesson.text || "");
 
           if (lesson.voice_path) {
@@ -483,11 +625,6 @@
       }
 
       wireLookup();
+      wireDrawer();
+      refreshDeckCount();
       loadLesson();
-    </script>
-=======
-    <script src="deck.js"></script>
-    <script src="lesson.js"></script>
->>>>>>> 36b98da (add video lessons, add access to old lessons)
-  </body>
-</html>

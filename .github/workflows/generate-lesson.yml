@@ -1,17 +1,20 @@
-name: Generate Weekly Lesson
+name: Generate Lesson
 
 on:
   workflow_dispatch:
     inputs:
+      youtube_url:
+        description: "YouTube URL. If set, builds a VIDEO lesson (captions, else local transcription) instead of a text lesson."
+        required: false
       level:
         description: CEFR level (A1-C2)
         required: false
         default: B1
       topic:
-        description: "Free-form topic (overrides the queue). Leave empty to pop the next entry from topics-queue.txt."
+        description: "Text lesson: free-form topic (overrides the queue). Leave empty to pop the next entry from topics-queue.txt."
         required: false
       source:
-        description: "Optional source URL (e.g. a Wikipedia article). If set, the topic field becomes a steering hint."
+        description: "Text lesson: optional source URL (e.g. a Wikipedia article). If set, the topic field becomes a steering hint."
         required: false
   schedule:
     - cron: "0 8 * * 1"
@@ -20,7 +23,9 @@ permissions:
   contents: write
 
 jobs:
-  generate:
+  text:
+    # Runs for the weekly schedule and for manual runs without a YouTube URL.
+    if: ${{ github.event.inputs.youtube_url == '' }}
     runs-on: ubuntu-latest
 
     steps:
@@ -81,7 +86,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add lessons/latest.json lessons/latest.mp3 lessons/archive || true
+          git add -A lessons
           if [ "$QUEUE_POPPED" = "true" ]; then
             git add topics-queue.txt
           fi
@@ -90,4 +95,60 @@ jobs:
             exit 0
           fi
           git commit -m "chore: update weekly german lesson"
+          git push
+
+  video:
+    # Runs only for a manual run with a YouTube URL.
+    if: ${{ github.event.inputs.youtube_url != '' }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install ffmpeg
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg
+
+      - name: Install video dependencies
+        run: pip install -r requirements-video.txt
+
+      - name: Cache German Kroko model
+        id: model-cache
+        uses: actions/cache@v4
+        with:
+          path: kroko-de
+          key: kroko-de-2025-08-06
+
+      - name: Download German Kroko model (used only when a video has no captions)
+        if: steps.model-cache.outputs.cache-hit != 'true'
+        run: |
+          mkdir -p kroko-de
+          base="https://huggingface.co/csukuangfj/sherpa-onnx-streaming-zipformer-de-kroko-2025-08-06/resolve/main"
+          for f in encoder.onnx decoder.onnx joiner.onnx tokens.txt; do
+            curl -fSL "$base/$f" -o "kroko-de/$f"
+          done
+
+      - name: Generate video lesson
+        env:
+          KROKO_MODEL: ${{ github.workspace }}/kroko-de
+        run: |
+          LEVEL="${{ github.event.inputs.level }}"
+          [ -z "$LEVEL" ] && LEVEL="B1"
+          python germanweekly.py --youtube "${{ github.event.inputs.youtube_url }}" --level "$LEVEL"
+
+      - name: Commit and push lesson
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A lessons
+          if git diff --cached --quiet; then
+            echo "No lesson changes to commit"
+            exit 0
+          fi
+          git commit -m "chore: add youtube video lesson"
           git push
