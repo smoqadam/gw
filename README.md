@@ -116,7 +116,7 @@ python germanweekly.py --level B2 --topic "..." --no-audio          # other opti
 Video lessons (need `ffmpeg` on PATH plus the video dependencies):
 
 ```bash
-pip install -r requirements-video.txt
+pip install -r requirements.txt
 export KROKO_MODEL=/path/to/sherpa-onnx-streaming-zipformer-de-kroko-...   # German model dir
 
 python germanweekly.py --youtube "https://www.youtube.com/watch?v=w9J6D4r30HY"

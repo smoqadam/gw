@@ -28,7 +28,7 @@
   --accent-tint: #fbeee5;
 
   /* Highlight (for words / inline emphasis) */
-  --highlight: #fff1c9;
+  --highlight: #ffffff;
   --highlight-deep: #ffe599;
 
   /* Feedback */
@@ -1214,6 +1214,7 @@ audio::-webkit-media-controls-panel {
   background: var(--highlight);
   border-left-color: var(--accent);
   color: var(--ink-strong);
+  border-radius: 0;
 }
 .seg-time {
   font-family: var(--font-mono);
@@ -1241,16 +1242,24 @@ audio::-webkit-media-controls-panel {
   border-bottom-color: var(--accent);
 }
 
-@media (max-width: 720px) {
+@media (max-width: 834px) {
   .video-layout {
     width: auto;
     left: auto;
     transform: none;
     flex-direction: column;
-    gap: 16px;
+    gap: 8px;
+    height: auto;
+    margin-bottom: 0;
   }
   .video-col { flex-basis: auto; width: 100%; }
-  .transcript { max-height: 48vh; }
+  .transcript {
+    flex: none;
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    padding: 6px 0;
+  }
 }
 
 /* Compact spacing for video lessons so the lesson fits without scrolling */
@@ -1259,6 +1268,96 @@ body.video-lesson .eyebrow { margin-bottom: 12px; }
 body.video-lesson h1.title { font-size: 30px; line-height: 1.16; margin-bottom: 22px; }
 body.video-lesson .video-layout { margin: 0 0 24px; }
 body.video-lesson .audience-hint { margin-top: 28px; padding-top: 22px; }
+
+@media (max-width: 640px) {
+  body.video-lesson main { padding-top: 16px; padding-bottom: 32px; }
+  body.video-lesson .eyebrow { margin-bottom: 6px; font-size: 11px; justify-content: flex-start; }
+  body.video-lesson h1.title { font-size: 18px; line-height: 1.25; margin-bottom: 10px; text-align: left; }
+  body.video-lesson .video-layout { margin-bottom: 0; gap: 10px; }
+}
+
+/* ====== About modal ====== */
+.about-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 70;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.25s ease, visibility 0.25s ease;
+}
+.about-modal.open { visibility: visible; opacity: 1; }
+.about-card {
+  position: relative;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 16px;
+  padding: 40px 36px 36px;
+  max-width: 480px;
+  width: calc(100% - 32px);
+  box-shadow: 0 24px 80px rgba(15, 17, 21, 0.18);
+  z-index: 1;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+.about-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: transparent;
+  border: 1px solid var(--rule);
+  color: var(--muted);
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  transition: color 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+}
+.about-close:hover {
+  color: var(--ink);
+  border-color: var(--rule-strong);
+  background: var(--bg);
+}
+.about-heading {
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--ink-strong);
+  margin: 0 0 20px;
+  letter-spacing: -0.015em;
+  font-variation-settings: "opsz" 144;
+}
+.about-body p {
+  font-family: var(--font-serif);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--ink);
+  margin: 0 0 14px;
+}
+.about-body p:last-child { margin-bottom: 0; }
+.about-body strong { color: var(--ink-strong); font-weight: 600; }
+.about-body a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 1px solid var(--accent-soft);
+  padding-bottom: 1px;
+  transition: border-color 0.15s ease;
+}
+.about-body a:hover { border-bottom-color: var(--accent); }
+
+.about-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 17, 21, 0.28);
+  cursor: pointer;
+}
 
 /* ====== Save to deck (lookup panel) ====== */
 .panel-save { margin-bottom: 18px; }

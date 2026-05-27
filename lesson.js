@@ -254,7 +254,7 @@
             Deck.add({
               term: saveTerm,
               article: entry.article || "",
-              definition: entry.english_definition || entry.german_definition || "",
+              definition: (entry.english_translations || []).join(", ") || entry.german_definition || "",
               example: (currentSaveCtx && currentSaveCtx.sentence) || "",
               source: currentLessonLabel || "",
             });
@@ -282,8 +282,8 @@
         if (entry.german_definition) {
           body.appendChild(el("div", { class: "panel-def-de", text: entry.german_definition }));
         }
-        if (entry.english_definition) {
-          body.appendChild(el("div", { class: "panel-def-en", text: entry.english_definition }));
+        if (entry.english_translations?.length) {
+          body.appendChild(el("div", { class: "panel-def-en", text: entry.english_translations.join(", ") }));
         }
 
         if (entry.examples && entry.examples.length) {
@@ -447,7 +447,7 @@
         if (!layout || layout.hidden) return;
         const box = document.getElementById("transcript");
         const frame = layout.querySelector(".video-frame");
-        if (window.innerWidth <= 720) { box.style.height = ""; return; }
+        if (window.innerWidth <= 834) { box.style.height = ""; return; }
         if (frame && box) box.style.height = frame.offsetHeight + "px";
       }
       window.addEventListener("resize", matchTranscriptHeight);
@@ -460,10 +460,9 @@
           p.classList.toggle("current", on);
           if (on && !firstActive) firstActive = p;
         });
-        if (firstActive) {
-          const top = firstActive.offsetTop - box.clientHeight / 2 + firstActive.offsetHeight / 2;
-          box.scrollTo({ top, behavior: "smooth" });
-        }
+    if (firstActive) {
+      box.scrollTo({ top: firstActive.offsetTop - 8, behavior: "smooth" });
+    }
       }
 
       function startSync() {
@@ -508,6 +507,7 @@
         document.body.classList.add("video-lesson");
         document.getElementById("audio").hidden = true;
         document.getElementById("text").hidden = true;
+        document.querySelector('.audio-wrap').hidden = true;
         currentSegments = lesson.segments || [];
         renderSegments(currentSegments);
         document.getElementById("video-layout").hidden = false;
@@ -624,7 +624,21 @@
         }
       }
 
+      function wireAbout() {
+        const btn = document.getElementById("about-btn");
+        const modal = document.getElementById("about-modal");
+        const overlay = document.getElementById("about-overlay");
+        if (!btn || !modal) return;
+        const open = () => { modal.classList.add("open"); modal.setAttribute("aria-hidden", "false"); };
+        const close = () => { modal.classList.remove("open"); modal.setAttribute("aria-hidden", "true"); };
+        btn.addEventListener("click", (e) => { e.preventDefault(); open(); });
+        modal.querySelector(".about-close")?.addEventListener("click", close);
+        overlay?.addEventListener("click", close);
+        document.addEventListener("keydown", (e) => { if (e.key === "Escape") close(); });
+      }
+
       wireLookup();
       wireDrawer();
+      wireAbout();
       refreshDeckCount();
       loadLesson();
