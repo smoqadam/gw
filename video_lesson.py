@@ -185,7 +185,7 @@ def run(youtube_url: str, level: str) -> None:
         "video_id": video_id,
         "url": youtube_url,
         "date": now.isoformat(),
-        "level": level,
+        "level": "",
         "source": {"type": "youtube", "url": youtube_url},
         "transcript_source": transcript_source,
         "segments": segments,
