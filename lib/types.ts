@@ -50,6 +50,7 @@ export interface VideoLesson extends BaseLesson {
   url?: string;
   transcript_source?: "captions" | "yapsnap";
   segments: Segment[];
+  vocabs?: VocabItem[];
 }
 
 export type Lesson = TextLesson | VideoLesson;

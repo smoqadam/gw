@@ -13,7 +13,7 @@ export function VideoLesson({ lesson }: { lesson: VideoLessonType }) {
   const { containerRef, activeStart, seekTo } = useYouTubePlayer(lesson.video_id, segments);
   const videoColRef = useRef<HTMLDivElement>(null);
   const transcriptRef = useRef<HTMLDivElement>(null);
-
+  console.log(lesson, 'video');
   useEffect(() => {
     if (activeStart === null) return;
     const box = transcriptRef.current;

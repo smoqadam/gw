@@ -7,10 +7,12 @@ export function Nav({
   onMenu,
   onAbout,
   deckActive = false,
+  gamesActive = false,
 }: {
   onMenu?: () => void;
   onAbout?: () => void;
   deckActive?: boolean;
+  gamesActive?: boolean;
 }) {
   const count = useDeckCount();
   return (

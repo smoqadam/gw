@@ -164,7 +164,7 @@ def transcribe_with_yapsnap(url: str, workdir: Path) -> list[dict[str, Any]]:
     return segments
 
 
-def run(youtube_url: str, level: str) -> None:
+def run(youtube_url: str, level: str, extract_vocab: bool = False) -> None:
     video_id = extract_video_id(youtube_url)
     title = fetch_metadata(youtube_url)
 
@@ -178,18 +178,34 @@ def run(youtube_url: str, level: str) -> None:
             segments = transcribe_with_yapsnap(youtube_url, workdir)
             transcript_source = "yapsnap"
 
+    vocabs: list[dict[str, Any]] = []
+    if extract_vocab:
+        from dotenv import load_dotenv
+
+        import vocab_llm
+
+        load_dotenv()
+        transcript_text = " ".join(s["text"] for s in segments)
+        try:
+            vocabs = vocab_llm.extract_vocabs(transcript_text, level)
+            print(f"  vocab: {len(vocabs)} words via LLM")
+        except Exception as exc:
+            print(f"  vocab extraction skipped: {exc}")
+
     now = dt.datetime.now(dt.timezone.utc)
-    lesson_record = {
+    lesson_record: dict[str, Any] = {
         "type": "video",
         "title": title,
         "video_id": video_id,
         "url": youtube_url,
         "date": now.isoformat(),
-        "level": "",
+        "level": level if extract_vocab else "",
         "source": {"type": "youtube", "url": youtube_url},
         "transcript_source": transcript_source,
         "segments": segments,
     }
+    if extract_vocab:
+        lesson_record["vocabs"] = vocabs
 
     lesson_id = save_lesson(lesson_record)
 

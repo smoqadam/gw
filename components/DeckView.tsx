@@ -1,11 +1,24 @@
 "use client";
 
+import { useMemo } from "react";
 import { Nav } from "./Nav";
+import { GamesView } from "./GamesView";
 import { Deck } from "@/lib/deck";
 import { useDeckCards } from "@/hooks/useDeck";
+import type { VocabItem } from "@/lib/types";
 
 export function DeckView() {
   const cards = useDeckCards();
+  const vocabPool = useMemo<VocabItem[]>(
+    () =>
+      cards.map((c) => ({
+        word: c.term,
+        definition: c.definition,
+        example: c.example || undefined,
+      })),
+    [cards],
+  );
+
   return (
     <>
       <Nav deckActive />
@@ -58,6 +71,10 @@ export function DeckView() {
             ))}
           </ul>
         )}
+
+        <div className="mt-16">
+          <GamesView vocabPool={vocabPool} />
+        </div>
 
         <p className="mt-12 font-ui text-xs text-muted">
           Saved while reading a lesson. Click any word in a lesson, then “Save to deck”.
