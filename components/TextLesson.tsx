@@ -24,37 +24,46 @@ export function TextLesson({ lesson }: { lesson: TextLessonType }) {
 
   return (
     <>
-      {audio && (
-        <audio
-          controls
-          src={audio}
-          className="mb-10 h-11 w-full rounded-full [color-scheme:light]"
-        />
+      <div className="mx-auto max-w-content">
+        {audio && (
+          <audio
+            controls
+            src={audio}
+            className="mb-10 h-11 w-full rounded-full [color-scheme:light]"
+          />
+        )}
+
+        <article className="space-y-6 font-serif text-[1.18rem] leading-[1.75] text-ink">
+          {paras.map((p, pi) => (
+            <p key={pi}>
+              {tokenize(p).map((t, ti) =>
+                t.word ? (
+                  <Word key={ti} text={t.text} sentence={p} wordKey={`p${pi}-w${ti}`} />
+                ) : (
+                  <span key={ti}>{t.text}</span>
+                ),
+              )}
+            </p>
+          ))}
+        </article>
+      </div>
+
+      {vocab.length > 0 && (
+        <div className="mt-16">
+          <Glossary label="Vocabulary" items={vocab} maxColumns={4} />
+        </div>
       )}
 
-      <article className="space-y-6 font-serif text-[1.18rem] leading-[1.75] text-ink">
-        {paras.map((p, pi) => (
-          <p key={pi}>
-            {tokenize(p).map((t, ti) =>
-              t.word ? (
-                <Word key={ti} text={t.text} sentence={p} wordKey={`p${pi}-w${ti}`} />
-              ) : (
-                <span key={ti}>{t.text}</span>
-              ),
-            )}
-          </p>
-        ))}
-      </article>
-
-      {(vocab.length > 0 || phrases.length > 0 || (lesson.quiz?.length ?? 0) > 0) && (
-        <div className="mt-16 space-y-16">
-          <Glossary label="Vocabulary" items={vocab} />
-          <Glossary label="Phrases" items={phrases} />
+      {(phrases.length > 0 || (lesson.quiz?.length ?? 0) > 0) && (
+        <div className="mx-auto mt-16 max-w-content space-y-16">
+          {phrases.length > 0 && <Glossary label="Phrases" items={phrases} />}
           {lesson.quiz && lesson.quiz.length > 0 && <Quiz items={lesson.quiz} />}
         </div>
       )}
 
-      <LessonActivities lesson={lesson} />
+      <div className="mt-16">
+        <LessonActivities lesson={lesson} />
+      </div>
     </>
   );
 }

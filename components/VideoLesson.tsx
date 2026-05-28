@@ -6,14 +6,20 @@ import { useYouTubePlayer } from "@/hooks/useYouTubePlayer";
 import { tokenize } from "@/lib/tokenize";
 import { formatTime } from "@/lib/format";
 import { Word } from "./Word";
+import { Glossary } from "./Glossary";
 import { LessonActivities } from "./LessonActivities";
 
 export function VideoLesson({ lesson }: { lesson: VideoLessonType }) {
   const segments = lesson.segments || [];
+  const vocab = (lesson.vocabs || []).map((v) => ({
+    term: v.word,
+    definition: v.definition,
+    example: v.example,
+  }));
   const { containerRef, activeStart, seekTo } = useYouTubePlayer(lesson.video_id, segments);
   const videoColRef = useRef<HTMLDivElement>(null);
   const transcriptRef = useRef<HTMLDivElement>(null);
-  console.log(lesson, 'video');
+
   useEffect(() => {
     if (activeStart === null) return;
     const box = transcriptRef.current;
@@ -92,7 +98,16 @@ export function VideoLesson({ lesson }: { lesson: VideoLessonType }) {
         </div>
       </div>
 
-      <LessonActivities lesson={lesson} />
+      {vocab.length > 0 && (
+        <>
+          <div className="mt-14">
+            <Glossary label="Vocabulary" items={vocab} maxColumns={4} />
+          </div>
+          <div className="mt-16">
+            <LessonActivities lesson={lesson} />
+          </div>
+        </>
+      )}
     </>
   );
 }
