@@ -334,7 +334,7 @@ def run(
     if not source_url and not topic:
         raise RuntimeError("--topic is required when --source is not provided.")
 
-    LESSONS_DIR.mkdir(exist_ok=True)
+    LESSONS_DIR.mkdir(parents=True, exist_ok=True)
     now = dt.datetime.now(dt.timezone.utc)
 
     lesson = generate_lesson(level=level, topic=topic, source_url=source_url)

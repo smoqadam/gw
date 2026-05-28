@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@theme {
+  /* Surfaces */
+  --color-paper: #f7f4ec;
+  --color-paper-soft: #f1ede2;
+  --color-surface: #ffffff;
+  --color-surface-warm: #fbf8f1;
+
+  /* Ink */
+  --color-ink: #1d2025;
+  --color-ink-strong: #0f1115;
+  --color-ink-soft: #4d545d;
+  --color-muted: #8a8f97;
+  --color-faint: #b4b6b8;
+
+  /* Rules */
+  --color-rule: color-mix(in srgb, #1d2025 9%, transparent);
+  --color-rule-strong: color-mix(in srgb, #1d2025 18%, transparent);
+  --color-rule-faint: color-mix(in srgb, #1d2025 5%, transparent);
+
+  /* Accent */
+  --color-accent: #b04a2b;
+  --color-accent-deep: #883518;
+  --color-accent-soft: #f4dccf;
+  --color-accent-tint: #fbeee5;
+
+  /* States */
+  --color-highlight: #ffe599;
+  --color-correct: #4f7c4f;
+  --color-correct-soft: #e9f0e4;
+  --color-wrong: #b5483d;
+  --color-wrong-soft: #f6e3df;
+
+  /* Fonts (next/font sets the referenced variables on <html>) */
+  --font-display: var(--font-fraunces), "Iowan Old Style", Georgia, serif;
+  --font-serif: var(--font-source-serif), "Iowan Old Style", Georgia, serif;
+  --font-ui: var(--font-inter), system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: var(--font-jetbrains), ui-monospace, Menlo, monospace;
+
+  /* Reading measure */
+  --container-content: 42rem;
+  --container-wide: 48rem;
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-serif);
+    font-synthesis-weight: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection {
+    background: var(--color-accent-soft);
+    color: var(--color-ink-strong);
+  }
+
+  a {
+    color: inherit;
+  }
+}

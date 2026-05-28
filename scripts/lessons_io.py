@@ -1,8 +1,9 @@
 """Lesson storage: one JSON file per lesson plus a lightweight index.
 
-Every lesson is `lessons/<id>.json` (text lessons also get `lessons/<id>.mp3`).
-`lessons/index.json` lists all lessons newest-first with just the metadata the
-frontend needs to render a browse drawer and pick a default lesson.
+Every lesson is `public/lessons/<id>.json` (text lessons also get `<id>.mp3`),
+served by the Next.js app at `/lessons/<id>.json`. `index.json` lists all
+lessons newest-first with just the metadata the frontend needs to render a
+browse drawer and pick a default lesson.
 
 Used by both the text generator (text_lesson.py) and the video lesson builder
 (video_lesson.py) so the storage layout lives in one place.
@@ -15,7 +16,7 @@ import unicodedata
 from pathlib import Path
 from typing import Any
 
-LESSONS_DIR = Path("lessons")
+LESSONS_DIR = Path(__file__).resolve().parent.parent / "public" / "lessons"
 INDEX_PATH = LESSONS_DIR / "index.json"
 
 _UMLAUTS = {"ä": "ae", "ö": "oe", "ü": "ue", "ß": "ss"}
@@ -59,7 +60,7 @@ def save_lesson(record: dict[str, Any], audio_tmp_path: Path | None = None) -> s
 
     `record` must contain at least `type`, `title`, and `date`.
     """
-    LESSONS_DIR.mkdir(exist_ok=True)
+    LESSONS_DIR.mkdir(parents=True, exist_ok=True)
 
     index = read_index()
     taken = {p.stem for p in LESSONS_DIR.glob("*.json") if p.name != INDEX_PATH.name}
@@ -70,7 +71,7 @@ def save_lesson(record: dict[str, Any], audio_tmp_path: Path | None = None) -> s
     if audio_tmp_path is not None:
         audio_dest = LESSONS_DIR / f"{lesson_id}.mp3"
         Path(audio_tmp_path).rename(audio_dest)
-        record["voice_path"] = str(audio_dest)
+        record["voice_path"] = f"lessons/{lesson_id}.mp3"
 
     (LESSONS_DIR / f"{lesson_id}.json").write_text(
         json.dumps(record, ensure_ascii=False, indent=2), encoding="utf-8"

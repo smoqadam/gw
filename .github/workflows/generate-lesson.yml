@@ -38,7 +38,7 @@ jobs:
           python-version: "3.11"
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: pip install -r scripts/requirements.txt
 
       - name: Resolve level + topic + source
         id: pick
@@ -51,13 +51,13 @@ jobs:
 
           QUEUE_POPPED="false"
           if [ -z "$TOPIC" ] && [ -z "$SOURCE" ]; then
-            if [ ! -s topics-queue.txt ]; then
-              echo "::error::topics-queue.txt is empty or missing. Add at least one topic line and rerun."
+            if [ ! -s scripts/topics-queue.txt ]; then
+              echo "::error::scripts/topics-queue.txt is empty or missing. Add at least one topic line and rerun."
               exit 1
             fi
-            TOPIC="$(head -n 1 topics-queue.txt)"
-            tail -n +2 topics-queue.txt > topics-queue.txt.new
-            mv topics-queue.txt.new topics-queue.txt
+            TOPIC="$(head -n 1 scripts/topics-queue.txt)"
+            tail -n +2 scripts/topics-queue.txt > scripts/topics-queue.txt.new
+            mv scripts/topics-queue.txt.new scripts/topics-queue.txt
             QUEUE_POPPED="true"
             echo "Popped from queue: $TOPIC"
           fi
@@ -79,16 +79,16 @@ jobs:
           ARGS=(--level "$LEVEL")
           if [ -n "$SOURCE" ]; then ARGS+=(--source "$SOURCE"); fi
           if [ -n "$TOPIC" ]; then ARGS+=(--topic "$TOPIC"); fi
-          echo "Running: python germanweekly.py ${ARGS[*]}"
-          python germanweekly.py "${ARGS[@]}"
+          echo "Running: python scripts/germanweekly.py ${ARGS[*]}"
+          python scripts/germanweekly.py "${ARGS[@]}"
 
       - name: Commit and push lesson
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A lessons
+          git add -A public/lessons
           if [ "$QUEUE_POPPED" = "true" ]; then
-            git add topics-queue.txt
+            git add scripts/topics-queue.txt
           fi
           if git diff --cached --quiet; then
             echo "No lesson changes to commit"
@@ -115,7 +115,7 @@ jobs:
         run: sudo apt-get update && sudo apt-get install -y ffmpeg
 
       - name: Install video dependencies
-        run: pip install -r requirements-video.txt
+        run: pip install -r scripts/requirements.txt
 
       - name: Cache German Kroko model
         id: model-cache
@@ -139,13 +139,13 @@ jobs:
         run: |
           LEVEL="${{ github.event.inputs.level }}"
           [ -z "$LEVEL" ] && LEVEL="B1"
-          python germanweekly.py --youtube "${{ github.event.inputs.youtube_url }}" --level "$LEVEL"
+          python scripts/germanweekly.py --youtube "${{ github.event.inputs.youtube_url }}" --level "$LEVEL"
 
       - name: Commit and push lesson
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A lessons
+          git add -A public/lessons
           if git diff --cached --quiet; then
             echo "No lesson changes to commit"
             exit 0
