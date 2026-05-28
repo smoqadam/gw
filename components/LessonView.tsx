@@ -52,7 +52,11 @@ export function LessonView() {
     };
   }, [wanted]);
 
-  const wide = !lesson || lesson.type === "video";
+  const widthClass = !lesson
+    ? "max-w-wide"
+    : lesson.type === "video"
+      ? "max-w-6xl"
+      : "max-w-content";
 
   return (
     <LookupProvider lessonLabel={lesson?.title || ""}>
@@ -65,11 +69,7 @@ export function LessonView() {
       />
       <AboutModal open={aboutOpen} onClose={() => setAboutOpen(false)} />
 
-      <main
-        className={
-          "mx-auto w-full px-5 pb-24 pt-12 sm:px-8 " + (wide ? "max-w-wide" : "max-w-content")
-        }
-      >
+      <main className={"mx-auto w-full px-5 pb-24 pt-12 sm:px-8 " + widthClass}>
         {loading && (
           <div className="font-ui text-xs uppercase tracking-[0.16em] text-muted">Loading…</div>
         )}
@@ -98,7 +98,7 @@ export function LessonView() {
         )}
       </main>
 
-      <footer className="mx-auto w-full max-w-wide px-5 pb-12 font-ui text-xs text-muted sm:px-8">
+      <footer className={"mx-auto w-full px-5 pb-12 font-ui text-xs text-muted sm:px-8 " + widthClass}>
         GermanWeekly.com on{" "}
         <a
           className="text-accent transition-colors hover:text-accent-deep"
