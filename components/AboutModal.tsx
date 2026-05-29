@@ -57,8 +57,7 @@ export function AboutModal({ open, onClose }: { open: boolean; onClose: () => vo
         </ul>
 
         <p className="mt-4 font-serif leading-relaxed text-ink-soft">
-          Heads up: the dictionary meanings come from an AI model, so they&apos;re sometimes wrong —
-          double-check anything important. This is mostly vibe-coded for my own use. It runs entirely
+          The word lookup is using <a href="https://dict.germanweekly.com">https://dict.germanweekly.com</a> which is also open-source. This is mostly vibe-coded for my own use. It runs entirely
           in your browser: no account, nothing stored on a server, and your deck stays on this device.
         </p>
 
