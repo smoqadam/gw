@@ -1,0 +1,115 @@
+{
+  "type": "text",
+  "title": "Bürgergeld in Deutschland: Eine Einführung",
+  "text": "Das Bürgergeld ist eine geplante Sozialleistung in Deutschland, die als Ersatz für das bisherige Hartz-IV-System dienen soll. Diese Reform wurde im Jahr 2022 von der damaligen Bundesregierung unter Olaf Scholz vorgeschlagen. Ziel des Bürgergeldes ist es, den Empfängern mehr finanzielle Sicherheit und weniger bürokratischen Aufwand zu bieten. Ein zentraler Aspekt des Bürgergeldes ist die Erhöhung der Regelsätze, die den Empfängern zugutekommen soll. Im Jahr 2022 lag der Regelsatz für einen alleinstehenden Erwachsenen bei 449 Euro im Monat. Geplant ist eine Erhöhung auf 502 Euro.\n\nEin weiterer wichtiger Punkt ist die Einführung eines sogenannten \"Vertrauenszeitraums\". In den ersten sechs Monaten des Bezugs sollen Sanktionen weitgehend ausgesetzt werden, um den Empfängern Zeit zu geben, sich zu stabilisieren und eine neue Perspektive zu entwickeln. Diese Maßnahme ist politisch umstritten, da Kritiker befürchten, dass sie den Anreiz zur Arbeitssuche verringern könnte.\n\nEin praktisches Beispiel für die Auswirkungen des Bürgergeldes ist die Geschichte von Frau Müller aus Berlin. Sie war lange arbeitslos und bezog Hartz-IV-Leistungen. Mit der Einführung des Bürgergeldes erhielt sie nicht nur einen höheren monatlichen Betrag, sondern auch Unterstützung bei der Weiterbildung. Frau Müller konnte an einem Kurs zur beruflichen Qualifikation teilnehmen, der ihr später half, eine Anstellung zu finden.\n\nDie Diskussion über das Bürgergeld ist ein heißes Thema in der deutschen Politik. Befürworter argumentieren, dass es den Menschen mehr Würde und Selbstbestimmung gibt. Gegner hingegen befürchten, dass es die Staatsausgaben erhöhen und Menschen von der Arbeitsaufnahme abhalten könnte. Diese politische Debatte zeigt, wie komplex das Thema Sozialleistungen ist und wie unterschiedlich die Meinungen darüber sein können.",
+  "date": "2026-06-01T09:46:49.375631+00:00",
+  "level": "B1",
+  "topic": "Bürgergeld in Deutschland: was es ist, wer es bekommt, und warum es politisch umstritten ist",
+  "source": {
+    "type": "ai"
+  },
+  "vocabs": [
+    {
+      "word": "Regelsatz",
+      "definition": "standard rate",
+      "example": "Im Jahr 2022 lag der Regelsatz für einen alleinstehenden Erwachsenen bei 449 Euro im Monat."
+    },
+    {
+      "word": "Vertrauenszeitraum",
+      "definition": "period of trust",
+      "example": "Ein weiterer wichtiger Punkt ist die Einführung eines sogenannten \"Vertrauenszeitraums\"."
+    },
+    {
+      "word": "Sanktionen",
+      "definition": "sanctions",
+      "example": "In den ersten sechs Monaten des Bezugs sollen Sanktionen weitgehend ausgesetzt werden."
+    },
+    {
+      "word": "Anreiz",
+      "definition": "incentive",
+      "example": "Kritiker befürchten, dass sie den Anreiz zur Arbeitssuche verringern könnte."
+    },
+    {
+      "word": "Selbstbestimmung",
+      "definition": "self-determination",
+      "example": "Befürworter argumentieren, dass es den Menschen mehr Würde und Selbstbestimmung gibt."
+    },
+    {
+      "word": "Arbeitsaufnahme",
+      "definition": "taking up work",
+      "example": "Gegner hingegen befürchten, dass es die Staatsausgaben erhöhen und Menschen von der Arbeitsaufnahme abhalten könnte."
+    },
+    {
+      "word": "Qualifikation",
+      "definition": "qualification",
+      "example": "Frau Müller konnte an einem Kurs zur beruflichen Qualifikation teilnehmen."
+    },
+    {
+      "word": "Staatsausgaben",
+      "definition": "government spending",
+      "example": "Gegner hingegen befürchten, dass es die Staatsausgaben erhöhen könnte."
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "zugutekommen soll",
+      "translation": "is supposed to benefit",
+      "example": "Ein zentraler Aspekt des Bürgergeldes ist die Erhöhung der Regelsätze, die den Empfängern zugutekommen soll."
+    },
+    {
+      "phrase": "politisch umstritten",
+      "translation": "politically controversial",
+      "example": "Diese Maßnahme ist politisch umstritten."
+    },
+    {
+      "phrase": "Befürworter argumentieren",
+      "translation": "supporters argue",
+      "example": "Befürworter argumentieren, dass es den Menschen mehr Würde und Selbstbestimmung gibt."
+    },
+    {
+      "phrase": "ein heißes Thema",
+      "translation": "a hot topic",
+      "example": "Die Diskussion über das Bürgergeld ist ein heißes Thema in der deutschen Politik."
+    }
+  ],
+  "quiz": [
+    {
+      "type": "mcq",
+      "q": "Was bedeutet 'Anreiz'?",
+      "options": [
+        "punishment",
+        "incentive",
+        "payment",
+        "obligation"
+      ],
+      "answer": 1,
+      "why": "Anreiz refers to something that motivates or encourages someone to do something."
+    },
+    {
+      "type": "cloze",
+      "sentence": "Die Erhöhung der Regelsätze soll den Empfängern ___.",
+      "answer": "zugutekommen",
+      "why": "The phrase 'zugutekommen soll' means 'is supposed to benefit' the recipients."
+    },
+    {
+      "type": "mcq",
+      "q": "Was bedeutet 'politisch umstritten'?",
+      "options": [
+        "widely accepted",
+        "politically neutral",
+        "politically controversial",
+        "economically beneficial"
+      ],
+      "answer": 2,
+      "why": "Politisch umstritten means that something is a subject of political debate or controversy."
+    },
+    {
+      "type": "cloze",
+      "sentence": "Kritiker befürchten, dass das Bürgergeld den ___ zur Arbeitssuche verringern könnte.",
+      "answer": "Anreiz",
+      "why": "The sentence refers to the concern that the incentive to seek work might be reduced."
+    }
+  ],
+  "voice_path": "lessons/2026-06-01-buergergeld-in-deutschland-eine-einfuehrung.mp3",
+  "id": "2026-06-01-buergergeld-in-deutschland-eine-einfuehrung"
+}
